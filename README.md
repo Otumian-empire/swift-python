@@ -1,4 +1,5 @@
-This a swift presentation of the basics of programming, using the python programming language to the extent that we can take it.
+# Swift-Python
+This is a swift presentation of the basics of programming, using the python programming language to the extent that we can take it.
 
 This is meant for anyone with interest in learning python given a limitted period or an experienced developer who want to pick up the python programming. Also students who have taken introduction to computer science or programming would find this helpful in their own frame.
 
@@ -8,3 +9,13 @@ The content in here is very simple to follow, all you need is the latest or stab
 
 
 You basically read the content, take notes and try the exercises for your own good. 
+
+# To contribute
+* write a content
+* edit or update a content
+* fix typos
+* suggest updates or improvement
+* create more practical examples
+* add a documentation
+* read the content and provide feedback
+* you may compile a pdf version of all the files
