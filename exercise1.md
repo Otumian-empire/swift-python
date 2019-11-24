@@ -13,13 +13,13 @@ age = 45
 weight = 23.7
 grade = "A+"
 ```
+All these are examples of variable assignment ( varaible creation) of different data types.
 
 ## Practicals
 * Create 10 variables and assign them values of your choice ( perhaps, as above).
 
-All these are examples of variable assignment ( varaible creation) of different data types.
 
-SUMMARY:
+## Summary:
 * A variable represents the name given to the memory address (location of a value in memory).
 * Referencing (calling) the variable returns the value
 * The Value stored in a variable can change anytime - thats why we call it a variable
