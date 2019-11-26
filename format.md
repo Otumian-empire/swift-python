@@ -1,7 +1,7 @@
 # Format used in preparing this content
 We used a very simple structure that basically leads us to the brevity of these materials. In order,
 * Content
-* Examples
+* Examples and Notes (Warnings)
 * Practicals (Exercise)
 * Summary
 
@@ -9,7 +9,7 @@ We used a very simple structure that basically leads us to the brevity of these 
 This is made up of the prose of the topic of interest with some basic illustrations.
 
 ## Examples
-This is made of examples from the prose, something that is quiet but speaks louder.
+This is made of examples from the prose, something that is quiet but speaks louder. We add some basic tips here as well.
 
 ## Practicals
 This is a simple exercise that follows after the reader has gone through the prose.
