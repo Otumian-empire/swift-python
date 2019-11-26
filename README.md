@@ -19,3 +19,5 @@ You basically read the content, take notes and try the exercises for your own go
 * add a documentation
 * read the content and provide feedback
 * you may compile a pdf version of all the files
+
+__Know that the file extension should be `.md`__
