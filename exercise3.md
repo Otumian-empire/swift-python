@@ -9,10 +9,10 @@ is_human = True
 ```
 
 ## Note
-Boolean values are case sensity. Upper-case `T` for `True` and `F` for `False`.
+Boolean values are case sensity. Upper-case `T` for `True` and `F` for `False`, in python.
 
 ## Comment
-A comment is basically a piece of text that tells why or what you are trying to achieve. The `#` symbol, placed ( inserted) at the beginning of the line, comments the line ( is ignored by the interpreter).
+A comment is basically a piece of text that mostly tells why or what you are trying to achieve. The `#` symbol, placed ( inserted) at the beginning of the line, comments the line ( the line is ignored by the interpreter).
 
 ## Examples
 ```
@@ -32,7 +32,7 @@ Whatever that comes after the `#` would be ignored.
 1. In exercise 2, add comments to your solutions to give the why/what the line is doing or meant to do ( remember that not all lines needs comment if the code is discriptive itself).
 1. 
     * How many comments are there in the code below?
-    * Which parts ( lines) would be displayed and why? 
+    * Which parts ( line numbers) would be displayed and why? 
 
 ```
 1 # John Doe - profile
@@ -46,4 +46,5 @@ Whatever that comes after the `#` would be ignored.
 * A boolean value is `True` or `False`.
 * These values are generated during comparison.
 * A comment is supposed to explain, "the" what or why in the code ( line)
+* You can also use it to state how you want to reach you solution
 * Use `#` to create a comment

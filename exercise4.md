@@ -17,8 +17,21 @@ Modulo | % | 3 % 2 | int
 * `//`, returns the whole number ( quotient) of the division. So,  `given: 22.0 // 3 = 7.0 and 22 // 3 = 7` .
 * `/`, returns the quotient and the remainder as a float, together. `Eg: 3 / 2 = 1.5 and 0.25 / 0.5 = 0.5` .
 
+# Casting
+Casting is change from one type to another. To know the type of a value, use the `type` function. `Eg: type(2) and type('2') will return <class 'int'> and <class 'str'>` respectively. Meaning that, 2 is an integer and '2' is a string.
+
+```python
+# casting
+x = 2 # x is an int
+y = float(x) # we cast x to a float and passed the value to y
+z = str(y) # y is a float, changed to a string and the value assigned to z
+```
+
+## Note
+The values of x and y doesn't change after the casting, except that we do, `y = float(y)`.
+
 # Practicals
-write a program to evalute and print the following given that `a = 2` and `b = 5`:
+write a program to evalute and print the results of the following given that `a = 2` and `b = 5`:
 
 1. 
     * a * (2 * b) - 5
