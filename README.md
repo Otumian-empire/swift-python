@@ -20,4 +20,17 @@ You basically read the content, take notes and try the exercises for your own go
 * read the content and provide feedback
 * you may compile a pdf version of all the files
 
+# To implement a project
+One should break the project into basically four phases, i.e:
+* Analysis phase
+* Design phase
+* Implementation phase
+* Test phase
+
+> The test phase should be ignored if a test is not needed.
+
+> Add comments to make understanding the code better
+
+> You can choose to all phases in one file
+
 __Know that the file extension should be `.md`__
