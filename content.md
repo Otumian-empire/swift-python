@@ -34,3 +34,7 @@
 1. exercise 14 (Tuple)
 1. exercise 15 (Set)
 1. exercise 16 (Dictionary)
+1. exercise 17 (OOP)
+1. exercise 18 (Git)
+1. exercise 19 (SQL)
+1. exercise 20 (SQLite3)
