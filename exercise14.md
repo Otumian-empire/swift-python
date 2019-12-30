@@ -78,8 +78,21 @@ The elements of a list are indexed from 0 to (n - 1), where n is the size of the
     print(f_list)
     ```
 
+1. `in` to check the if an object exists in a list.
+    ```python
+    my_list = [1,2,3]
 
-## List functions
+    # check if the list contains 4
+    if 4 in my_list:
+        print('The list has a four')
+    else:
+        print('well, there is no four')
+    
+    ```
+
+
+
+## Some list functions
 * append(obj) - adds object to the end of the list object
 * extends(obj) - adds object to the end of the list object as a whole
 * index(obj) - returns the index of obj in the list object
@@ -147,6 +160,26 @@ del name_list[1]
     1. `multplication` - this function takes two objects as argument, returns the product of the two.
 * Write a function, that takes a list as an argument of various objects, return a list of all the objects that are numbers ( that is integer and float).
 * Write a function taking a list of various objects as argument, return the number of each object in the list.
+* Write a function that takes a list of integers as an argument, remove ( delete) any element that has the same number type as its `index + 1`. ( If the `index + 1` is even and the element is even remove the element, like while odd except when the `index` is 0), looping though the list `n` times, `n` is the size of the list.
+    ```python
+    s = [2, 6, 18, 11, 4]
+    # 6 is removed - loop 1
+    # 18 is removed - loop 2
+    # None is removed - loop 3
+    # None is removed - loop 4
+    # None is removed - loop 5
+
+    s = [2, 11]
+    ```
+* This practicals is the same as the above but in the above as you remove the elements which passes the condition, the list is changed too. In here, you remove all at a go. ( It is better you use a list rather than a loop in removing the elements and do not remove object by index)
+    ```python
+    # i = index + 1
+    s = [2, 6, 18, 11, 4]
+    i = [1, 2,  3,  4, 5]
+
+    # only 6 will be removed
+    s = [2, 18, 11, 4]
+    ```
 
 ## Summary
 * A `list` is a collection of comma seperated objects
@@ -155,4 +188,5 @@ del name_list[1]
 * Pass the index of the element of interest into a square bracket after the name of the list object. `Eg: list_obj[1]`
 * You can use `+` operator to concatenate one list to another
 * You can use `*` operator to repeat the list n time. `Eg: list_obj * 3`
+* You can check if an object is in a list by using the `in` keyword. `Eg: obj in list_object`
 * Use the dot operator to call a list function ( aka method). `Eg: list_object_name.function_name(some args)`
