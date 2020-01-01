@@ -1,9 +1,11 @@
 # exercise 5 c (Implementation of a solution)
-> We'd implement the desgin from `exercise 5 b (Designing of a solution)`
+
+> We'd implement the desgin from `exercise 5 b (Designing of a solution)` 
 
 In this stage we write the code based on the design and then go further on to test and debug our code. We are going to change the design to a valid python code.
 
-```
+``` python
+'''
 The inputs:
     totalNumberStudent: int = 5
     listOfScore: list = 40, 78, 91, 59 and 12 
@@ -20,10 +22,12 @@ The output:
     averageOfScores
     numberAboveAverage
     numberBelowAverage
+'''
 ```
 
 ## Code 1
-```python
+
+``` python
 # The inputs
 totalNumberStudent = 5
 
@@ -89,9 +93,9 @@ print(numberAboveAverage, "scored above average")
 print(numberBelowAverage, "scored below average")
 ```
 
-
 ## Code 2
-```python
+
+``` python
 # The inputs
 totalNumberStudent = 5
 
@@ -137,10 +141,13 @@ print(numberBelowAverage, "scored below average")
 ```
 
 ## Practicals
-Implement your design from the practicals in `exercise 5 b (Design of a solution)`
+
+Implement your design from the practicals in `exercise 5 b (Design of a solution)` 
 
 ## summary
+
 * Implementation phase is where you code the design from the analysis
 * Implementaion is not the last phase of software developement
 * You have to test and maintain the software and ofcourse, you have to document it
 * From the analysis, design and implementation, surely the documentation speaks for itself
+

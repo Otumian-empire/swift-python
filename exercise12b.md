@@ -1,15 +1,18 @@
 # excercise 12 b (Functions)
-> This is a continuation of `excercise 12 a (Functions)`
+
+> This is a continuation of `excercise 12 a (Functions)` 
 
 ## A function with argument
+
 An argument is basically a value ( some times a reference of the value) we pass to a function so that the function may make use to it to reach an end.
 
-A better version of the above code would be that we are able to pass argument to it. It will be better when we can dictate what the base or height can be. With this we can modify the functionality of the function to return a particular area based on the arguments passed. 
+A better version of the above code would be that we are able to pass argument to it. It will be better when we can dictate what the base or height can be. With this we can modify the functionality of the function to return a particular area based on the arguments passed.
 
 ### Example
+
 # A program that calculates and prints the area of a triangle taking the base and height as arguments
 
-```python
+``` python
 # A program that calculates and prints the area of a 
 # triangle passing the base and height as arguments
 
@@ -17,7 +20,6 @@ def calc_area(base, height):
     area = 0.5 * base * height
 
     print(f"The area of a triagle of base, {base} and height, {height} is {area}")
-
 
 # take the base and height from the user
 base = float(input("Enter base: "))
@@ -29,9 +31,10 @@ calc_area(base, height)
 ```
 
 ### Note
+
 There is what we call argument and also a parameter. They are almost the same basically. So an argument is a parameter. Use put the paramter into the function when creating the function and the argument is what we pass to the function when we are calling it.
 
-```python
+``` python
 def calc_area(base, height):
     # code
 
@@ -42,9 +45,10 @@ calc_area(3, 4)
 ```
 
 ## Function that returns a value
+
 Sometimes, one may want a value from a function to make use of it in one way or another. To achieve this we rather return the value rather printing it out in the function.
 
-```python
+``` python
 # A function that returns a value
 # this function returns the area of a triangle, taking the base and height as arguments
 
@@ -59,11 +63,11 @@ user_height = float(input("Enter height: "))
 area = calc_area(user_base, user_height)
 
 print(f"The area of a triagle of base, {user_base} and height, {user_height} is {area}")
-
 ```
 
 ### Example a sorting function
-```python
+
+``` python
 # this is a function that take list, an iterable as an argument and them sorts it
 # how this sorting function works
 # so give a list of size, n
@@ -86,8 +90,7 @@ def sort_func(my_ite):
 
     return my_ite
 
-
 print(sort_func([6, 3, 2, 4, 1]))
 print(sort_func(['w', 't', 'a', 'i']))
-
 ```
+

@@ -5,6 +5,7 @@
 In the previous chapter we looked into function and we created a couple of our own. Python comes packaged with some function and these functions are known the built-in functions.
 
 ## Some built-in functions
+
 1. abs(x)
 1. divmod(a, b)
 1. float(x)
@@ -26,7 +27,8 @@ In the previous chapter we looked into function and we created a couple of our o
 1. chr(i) and ord(s)
 
 ## Examples
-```python
+
+``` python
 # abs - returns an absolute value of a number
 print(abs(2.34), abs(-23.4))
 
@@ -70,13 +72,17 @@ print(ord('A'))
 # input, print
 # we have also seen them before
 ```
+
 ## Practicals
-* Implement a function known as `all(iterable)`. This function returns `True` if all the elements of the `iterable` is `True` or the `iterable` is empty, else `False`.
-* Implement a function known as `any(iterable)`. This function returns `True` if all the elements of the `iterable` is `True`. If the iterable is empty, return False.
-* Implement the `abs(x)` function where `x`, is a number.
-* Implement a function that returns the minimum and maximum numbers in given list. Don't use the built-in function `min` and `max`.
+
+* Implement a function known as `all(iterable)` . This function returns `True` if all the elements of the `iterable` is `True` or the `iterable` is empty, else `False` .
+* Implement a function known as `any(iterable)` . This function returns `True` if all the elements of the `iterable` is `True` . If the iterable is empty, return False.
+* Implement the `abs(x)` function where `x` , is a number.
+* Implement a function that returns the minimum and maximum numbers in given list. Don't use the built-in function `min` and `max` .
 
 ## Summary
+
 * Python came with some functions know as the built-in functions
 * These functions makes working in python much more easier and flexible without you having to implement your own version of that function.
 * Built-in functions does not change the object
+
