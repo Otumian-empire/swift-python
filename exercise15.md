@@ -1,4 +1,4 @@
-# exercise 15 (Tuple)
+# Exercise 15 (Tuple)
 A tuple is a comma seperated values and by conversion delimited by an open and closed brackets - parentheses. A tuple is just like a list a tuple is immutable - can not be altered after creation unlike a list.
 
 ## Structure of a Tuple

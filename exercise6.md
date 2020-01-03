@@ -1,4 +1,4 @@
-# exercise 6 (Input and output)
+# Exercise 6 (Input and output)
 In this exercise we discuss Input and outputs.
 
 ## Input
@@ -26,7 +26,7 @@ print("First Name: ", first_name)
 The `print()` funtion is used to output information on the screen or write into files. This is the print function in full, 
 `print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)` 
 
-### parts of the print function
+### Parts of the print function
 
 * `*objects: ` these are comma seperated objects you want to display or output. The `*` indicates there is more than one object. `Eg: print('I am', 34, 'years old')` . So we display three objects.
 

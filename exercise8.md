@@ -1,4 +1,4 @@
-# exercise 8 (String formatting)
+# Exercise 8 (String formatting)
 There are a lot of ways to format your output which makes manipulation of your output more readable. We'd go with the `f"... {}"` approach.
 The `{}` provides the means to insert values into your string as you write it out, and the `f` means format.
 

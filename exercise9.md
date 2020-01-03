@@ -1,4 +1,4 @@
-# exercise 9 (Logical and relational operators)
+# Exercise 9 (Logical and relational operators)
 We advice you skim through exercise 3. How are boolean values generated? Logical operators with the use of Relation Operators generate Boolean Values.
 
 ## Relational Operators

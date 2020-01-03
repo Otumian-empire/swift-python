@@ -1,4 +1,4 @@
-# exercise 4 (Arithmatic Operators)
+# Exercise 4 (Arithmatic Operators)
 Arithmetic operators are reserved symbols that are used for performing mathematical operations ( calculations).
 
 ## Examples

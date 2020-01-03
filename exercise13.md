@@ -1,4 +1,4 @@
-# exercise 13 (Some built-in functions)
+# Exercise 13 (Some built-in functions)
 
 > We really recommend you check out the [python doc](https://python.org), see the library reference and click on the built-in functions.
 

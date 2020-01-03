@@ -1,4 +1,4 @@
-# excercise 12 c (Functions)
+# Excercise 12 c (Functions)
 
 > This is a continuation of `excercise 12 b (Functions)` 
 
@@ -45,14 +45,10 @@ many_args('sandy', 'jude', 'mani', 'desmond', 'peter', 'sandy', 'jude', 'mani', 
 
 * A function is simply a block of code than can be called and arguments be passed to it
 * function definition 
-
-```python
-
+    ```python
     def function_name(some_args):
         # some code
-
-``` 
-
+    ``` 
 * you can call the function by doing `func_name(some_args)` 
 * A function allows resue of code
 * A function can be used in any part of our code

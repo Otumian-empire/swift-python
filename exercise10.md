@@ -1,9 +1,9 @@
-# exercise 10 (Conditions)
+# Exercise 10 (Conditions)
 In the previous  exercise we discussed relational and logical operators, and in this exercise we shall make use of Truth values.
 
 This exercise is about decision making. One would like to display certain output or take input or even terminate the program based on a certain condition. In python we have the `if, elif and else` , statements which makes it easier to do some comparison.
 
-## if statement
+## If statement
 
 Basically, this is the structure of an if statement.
 
@@ -30,7 +30,7 @@ if drivers_speed >= MAX_SPEED:
 
 Nothing happends when the drive is below speed limit
 
-## else statement
+## Else statement
 
 Perhaps you want to alert the user to do something when the condition fails ( becomes False), then one must add the else part.
 
@@ -59,7 +59,7 @@ else:
 
 Python uses indentation for structuring. Consider the above example on `if else` statement, all the code in the indentation below the `if` statement is the body of the `if` . Those that are outside the ifs indentation forms another block of code. So make proper use of the indentations and use it correctly.
 
-## elif statement
+## Elif statement
 
 So after the if statement failed, you want to check for another condition, before the the `else` block, then you use the `elif` which is like, `else if` .
 

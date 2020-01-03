@@ -1,4 +1,4 @@
-# excercise 12 b (Functions)
+# Excercise 12 b (Functions)
 
 > This is a continuation of `excercise 12 a (Functions)` 
 

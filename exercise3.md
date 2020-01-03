@@ -1,4 +1,4 @@
-# exercise 3 (More on data types and comments)
+# Exercise 3 (More on data types and comments)
 There is another data type that is called boolean. This data type can only be True or False. Boolean values are generated when values are compared or when there is a condition. `Eg 1 < 2 is True, 1 > 2 is False` .
 
 ## Examples

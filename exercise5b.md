@@ -1,4 +1,4 @@
-# exercise 5 b (Design of a solution)
+# Exercise 5 b (Design of a solution)
 
 > continaution of `exercise 5 a (Analysis of a solution)` 
 

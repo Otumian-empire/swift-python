@@ -1,4 +1,4 @@
-# exercise 14 (List)
+# Exercise 14 (List)
 We have had our fill with lists but here we kind of go much into it.
 
 ## What is a list
@@ -15,18 +15,18 @@ str_list = ['1', '2', 'Jonas', 'maiduguri', 'samoa']
 bool_list = [True, False, False, True]
 ```
 
-## types of list
+## kinds of list
 
-There are basically two types of list in python, the one dimensional list - a single list and then the multi-dimensional list - this can 2D, 3D, etc
+There are basically two kinds of list in python, the one dimensional list - a single list and then the multi-dimensional list - this can 2D, 3D, etc
 
-### one Dimensional list
+### One Dimensional list
 
 ``` python
 # sample of 1D list
 num_list = [1, 2, 3, 4, 5]
 ```
 
-### multi-dimensional list
+### Multi-dimensional list
 
 ``` python
 # samples of XD list
@@ -45,7 +45,7 @@ list_list = [
 ]
 ```
 
-## accessing elements of a list
+## Accessing elements of a list
 
 The elements of a list are indexed from 0 to (n - 1), where n is the size of the list. To access an element from the list, use its index.
     ``` python

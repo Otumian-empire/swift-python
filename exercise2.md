@@ -36,7 +36,7 @@ my_weight = 125.5
 pi = 3.14
 ```
 
-## practicals
+## Practicals
 
 1. look into exercise 1, and for the 10 varaibles you created earlier, state their data types
 

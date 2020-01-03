@@ -1,4 +1,4 @@
-# exercise 7 (String operations and function)
+# Exercise 7 (String operations and function)
 A string is a sequence of at least zero characters enclosed winthin (delimiter by) an opened and closed single or double quotation marks. This include any character, even a space. `Eg: 'swift python', "Alan Turing"` 
 
 ## String operations

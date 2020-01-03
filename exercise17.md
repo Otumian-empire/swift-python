@@ -1,4 +1,4 @@
-# exercise 17 (Dictionary)
+# Exercise 17 (Dictionary)
 A dictionary just like a list, tuple and a set which are sequential and number indexed, is rather key-value paired. You reference with keys instead of values
 
 ## Structure of a dictionary
@@ -40,7 +40,7 @@ print(my_tupled_list)
 # output-> {'name': 'John Doe', 'age': 32, 'job': 'Software engineer'}
 ```
 
-## indexing and updating a dictionary
+## Indexing and updating a dictionary
 
 Indexing and updating is done just one would do to a list.
 
@@ -150,7 +150,7 @@ profile.popitems()
 print(len(new_profile) == len(profile))
 ```
 
-## looping through a dictionary
+## Looping through a dictionary
 
 Looping is the same every where in a list, set and tuple, in even a string, but for a dictionary we may loop using a key or and value.
 

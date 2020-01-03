@@ -1,4 +1,4 @@
-# exercise 5 c (Implementation of a solution)
+# Exercise 5 c (Implementation of a solution)
 
 > We'd implement the desgin from `exercise 5 b (Designing of a solution)` 
 
@@ -144,7 +144,7 @@ print(numberBelowAverage, "scored below average")
 
 Implement your design from the practicals in `exercise 5 b (Design of a solution)` 
 
-## summary
+## Summary
 
 * Implementation phase is where you code the design from the analysis
 * Implementaion is not the last phase of software developement

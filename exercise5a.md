@@ -1,4 +1,4 @@
-# exercise 5 a (Analysis of a problem)
+# Exercise 5 a (Analysis of a problem)
 In this part, we would would look into how to create a solution to a given problem. Lets consider a very basic problem to do with.
 
 ## Sample problem

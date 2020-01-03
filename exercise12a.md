@@ -1,4 +1,4 @@
-# excercise 12 a (Functions)
+# Excercise 12 a (Functions)
 A function is simply a block of code, with a unique name and maybe, has some arguments, that performs a specific task. The use of functions prevents one from repeating a particular piece of routine/procedure over and over again.
 A function is of the structure:
 

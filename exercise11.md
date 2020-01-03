@@ -1,4 +1,4 @@
-# exercise 11 (Loops)
+# Exercise 11 (Loops)
 The need to repeat a certain process for a particular number of time or for as long as a particular condition holds arise. Here we'd look into loops ( also know iterations). There are basically two types of loops in python, the `for` and `while` loop.
 
 Already, you have seen a list, briefly. A list is an in built structure for holding data ( a collection of these data actually). A list can be looped upon.
@@ -120,7 +120,7 @@ for index in range(len_str_list - 1, -1, -1):
 # assuming end = 0, implies that we only displace size minus one elements
 ```
 
-## while loop
+## While loop
 
 This loop does something ( executes its body until a condition is met or as far as a condition is still valid)
 

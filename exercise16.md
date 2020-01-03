@@ -1,4 +1,4 @@
-# exercise 16 (Set)
+# Exercise 16 (Set)
 A set is a mutable sequence with no duplicates. Just like a list, but no duplicate. A set is delimited by open and close curly brackets.
 
 ## Structure of a set
