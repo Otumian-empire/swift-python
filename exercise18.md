@@ -117,7 +117,7 @@ except Exception as e:
 
 ## Practicals
 
-Fix these codes:
+Fix this code:
 
 ``` python
 try:
