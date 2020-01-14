@@ -4,7 +4,7 @@ You would want to keep your projects on your local server, your disk may corrupt
 
 ## Install git
 
-Install [git][git-site] depending on your OS. Do `git --verion` on the commandline to check if git is installed successfully.
+Install Git from [here][git-site] depending on your OS. Do `git --verion` on the commandline to check if git is installed successfully.
 
 ## Configure git
 
@@ -38,6 +38,16 @@ When the project already exist online, say on [Github][github-site], do the foll
 * or you can do, `git clone https://... repo_name` - where repo name is the name of the new folder you want to keep you files in instead of the original. This doesn't alter naything.
 * then navigate into `repo_name` - this repository comes with the enire version history of the repository.
 
+## Adding an existing project to remote server
+
+Here you already have the project or say you have finished developing it locally then you finally want to pppush it to the remote repository, do the following:
+
+* initialize the git repo locally, `git init` 
+* add the files in the local repository, `git add .` 
+* then stage them, `git commit -m "some message"` 
+* now copy the remote repository url and do, `git remote add origin https://...` , where `https://../` is the remote url
+* now send it to the remote repository, `$ git remote add origin https://...` 
+
 ## Git status
 
 Every file in a VCS has a status which tells you what has been done to the file thus what state the file is in.
@@ -48,9 +58,9 @@ Every file in a VCS has a status which tells you what has been done to the file 
 | ------------- | ----------- |
 | `tracked` | file git knows about |
 | `untracked` | file git doesn't know about |
-| `unmodified` | is an unchanged tracked file |
-| `modified` | is a changed tracked file |
-| `staged` | is a saved tracked file |
+| `unmodified` | an unchanged tracked file |
+| `modified` | a changed tracked file |
+| `staged` | a saved tracked file |
 
 ## Check file status
 
@@ -76,7 +86,31 @@ do `git commit ` - to open your default editor to give a more decriptive message
 * you can only stage (save) file you have tracked
 * make sure that the message
 
-## Example
+## Update the repository
+
+* to update the local repo with the remote repo do, `git pull` or sometimes `git pull https://...` 
+* to update the remote repo with the local repo do, `git push` or sometimes `git push https://...` 
+* to downloads all history from the repository from the remote repo do, `git fetch` 
+
+## Check the commits
+
+do `git log` to see the commits you have made. Thus provides you with some information you may use to reset/revert the repo when there is an error.
+
+## Reset
+
+`git reset [commit]` where commit is the code you see when you make a commit. Use that code to reset the repository. It undoes all the commits but keeps the changes, `git reset --hard [commit]` does the same but discard the all histories upto the particular commit.
+
+## Branch
+
+A branch is similar to a versioning. You can diverge from main code, work on the new version/branch without having to mess with the main code.
+
+### Operations with branching
+
+* `git branch` to list all the branches
+* `git branch branch_name` to create or divert to a new branch, `branch_name` 
+* `git checkout branch_name` to switch to another branch, `branch_name` 
+* `git merge branch_name` , combines the current branch with the content of `branch_name` 
+* `git branch -d branch_name` to delete `branch_name` from the branches
 
 ## Practical
 
@@ -87,6 +121,17 @@ do `git commit ` - to open your default editor to give a more decriptive message
 
 * read about git [here][git-site]
 * Every command in git, starts with `git` 
+* Table of commads you'd use more often
+    - `git add file_name` 
+    - `git add --all` or `git add .` 
+    - `git commit -m "commit message"` 
+    - `git pull` 
+    - `git push` 
+    - `git log` 
+    - `git status` 
+    - `git fetch` 
+    - `git branch` 
+    - `git checkout branch` 
 
 #
 [git-site]:https://git-scm.com
