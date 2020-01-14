@@ -133,8 +133,16 @@ A branch is similar to a versioning. You can diverge from main code, work on the
     - `git branch` 
     - `git checkout branch` 
 
+## Resource
+
+* Learn git with [Traversy Media][brad-git-site]
+* [w3school git][w3school-github-site]
+
+* Git tutorial from [git-scm][git-scm-site]
 #
 [git-site]:https://git-scm.com
 [github-site]:https://github.com
 [bitbucket-site]:https://bitbucket.org
-
+[brad-git-site]:https://www.youtube.com/watch?v=SWYqp7iY_Tc
+[w3school-github-site]:https://www.w3schools.com/whatis/whatis_github.asp
+[git-scm-site]:https://git-scm.com/docs/gittutorial
