@@ -220,6 +220,6 @@ The concept or steps behind the use of `sqlite3` is quite simple.
 * `close` cursor and connection
 
 #
-[sqlite3-python-site]:https://
+[sqlite3-python-site]:https://docs.python.org/3.7/library/sqlite3.html
 [sqlitebrowser-site]:https://sqlitebrowser.org/dl/
 
