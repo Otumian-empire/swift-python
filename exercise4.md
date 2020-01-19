@@ -1,4 +1,4 @@
-# Exercise 4 (Arithmatic Operators)
+# Exercise 4 ( Arithmatic Operators)
 Arithmetic operators are reserved symbols that are used for performing mathematical operations ( calculations).
 
 ## Examples
@@ -13,15 +13,15 @@ Arithmetic operators are reserved symbols that are used for performing mathemati
 | Integer division | // | 3 // 2 | int|
 | Modulo | % | 3 % 2 | int|
 
-# Note
+### Note
 
 * If one of the operands is a float, then the resulting value is casted ( converted) into float. `Eg: 1.0 + 1 = 2.0 and 1 + 1 = 1` .
-* `//` , returns the whole number ( quotient) of the division. So, `given: 22.0 // 3 = 7.0 and 22 // 3 = 7` .
-* `/` , returns the quotient and the remainder as a float, together. `Eg: 3 / 2 = 1.5 and 0.25 / 0.5 = 0.5` .
+* `//` , returns the whole number part ( quotient) of the division. So, `given: 22.0 // 3 = 7.0 and 22 // 3 = 7` .
+* `/` , returns the quotient and the remainder as a float, together. `Eg: 22 /3 = 7.333333333333333 and 0.25 / 0.5 = 0.5` .
 
 # Casting
 
-Casting is change from one type to another. To know the type of a value, use the `type` function. `Eg: type(2) and type('2') will return <class 'int'> and <class 'str'>` respectively. Meaning that, 2 is an integer and '2' is a string.
+Casting means, converting or changing from one type to another. To know the type of a value, use the `type(obj)` function. `Eg: type(2) and type('2') will return <class 'int'> and <class 'str'>` respectively. Meaning that, 2 is an integer and '2' is a string.
 
 ``` python
 # casting

@@ -1,4 +1,4 @@
-# Exercise 3 (More on data types and comments)
+# Exercise 3 ( More on data types and comments)
 There are other data types apart from those mentioned earlier in `Exercise 2 (Data types)` . We shall discuss `boolean` data type.
 
 This data type can only be `True` or `False` . Boolean values are generated when values are compared or when there is a condition. `Eg 1 < 2 is True, 1 > 2 is False` .

@@ -1,4 +1,4 @@
-# Exercise 1 ( creating a variable)
+# Exercise 1 ( Creating a variable)
 A variable is a placeholder ( a name, a container) given to an address ( a memory location) of a value in memory.
 You can think of a variable as a box, which has a name. This box will have a value and whenever you reference ( call) this variable ( name of the address), you then get the value stored at that address.
 To create a variable and assign it a value, all you have to think about is an equation.

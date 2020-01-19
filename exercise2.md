@@ -1,4 +1,4 @@
-# Exercise 2 (Data types)
+# Exercise 2 ( Data types)
 A data type is basically, the kind of value ( data) a variable can hold or store. Think of them as the kind of data you use in your program. More technically, a data type dictates the size of memory to be allocatted for a value.
 
 There are basically two types of data which are written in different forms. We have Numbers and Text (broadly speaking). Have a brief read on [C's data type][Cdata-type-size-site] - by the way, Python was implemented in [C][C-site].
