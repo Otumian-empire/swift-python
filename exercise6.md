@@ -1,19 +1,19 @@
 # Exercise 6 (Input and output)
-In this exercise we discuss Input and outputs.
+We shall dicuss in this exercise, Inputs and outputs.
 
 ## Input
 
-To take input from the user, we use the `input(prompt)` function. The `prompt` is a string - message, "prompting" the user of what is required of or it could be empty - nothing is passed in the parentheses.
+To take input from the user, we use the `input(prompt)` function. The `prompt` is a string - message, "prompting" the user of what is required of or it could be empty string - i.e nothing is passed in the parentheses.
 
 ### Note
 
-The value from the `input()` is always a string, so you have to _cast_ it to the desired type.
+The value from the `input()` is always a string, so we have to _cast_ it to the desired type.
 
-> Refer to exercise 4 , where we discussed in brief, casting.
+> Refer to `Exercise 4 ( Arithmatic Operators) - Casting` , where we discussed in brief, casting.
 
 ### Example
 
-``` python
+``` Python
 # prompt user for first name
 first_name = input("Enter first name: ")
 
@@ -28,25 +28,25 @@ The `print()` funtion is used to output information on the screen or write into 
 
 ### Parts of the print function
 
-* `*objects: ` these are comma seperated objects you want to display or output. The `*` indicates there is more than one object. `Eg: print('I am', 34, 'years old')` . So we display three objects.
+* `*objects: ` these are comma seperated objects we want to display or output. The `*` indicates there is more than one object. `Eg: print('I am', 34, 'years old')` . So we display three objects.
 
-* `sep=' ': ` By default, all the objects `'I am', 34 and  'years old'` are seperated by a single space. We could change it to `# exercise 6 (Input and output))` 
+* `sep=' ': ` By default, all the objects `'I am', 34 and  'years old'` are seperated by a single space. We could change it to any character we desire by passing `sep=desired_character` 
 
-* `end='\n': ` By default, the output from the print function adds `\n` - newline - to the objects so the next print goes to the next line.
+* `end='\n': ` By default, the output from the print function adds `\n` - newline - to the objects so the pointer goes to the next line.
 
-* `file=sys.stdout: ` You see, always, your output is displayed ( sent) to the screen, it because of `file=sys.stdout` . This is basically a file and as such could be any other file. So if you want to output data into another file, the you chnage the default value of the `file` to the name of the file object of interest.
+* `file=sys.stdout: ` We see, always that, our output is displayed ( sent) to the screen, it because of `file=sys.stdout` . This is basically a file and as such could be any other file. So if we want to output data into another file, then we change the default value of the `file` to the name of the file object of interest.
 
 * `flush=False: ` By default doesn't forcibly flush the buffer to the screen, and its *False*. Change to *True* to do otherwise.
 
-> Read more on Python Flush [Here](https://stackoverflow.com/questions/15608229/what-does-prints-flush-do) and then [Here](https://www.tutorialspoint.com/How-to-flush-the-internal-buffer-in-Python) or [Google it](https://google.com)
+> Read more on Python Flush [Here][flush-resource-site-1] and then [Here][flush-resource-site-2] or [Google it][google-site]
 
-> Make references [Programiz](https://www.programiz.com/python-programming/methods/built-in/print) and [The Pydoc](https://docs.python.org/3.8/tutorial/inputoutput.html?highlight=input)
+> Make references at [Programiz][Programiz-site] and [The Pydoc][pydoc-site]
 
 ## Example 1
 
-``` python
+``` Python
 # example 1
-# all appear on the different lines because, by default, end='\n'
+# all of these strings appear on the different lines because, by default, end='\n'
 print("hello")
 print("world")
 
@@ -65,21 +65,21 @@ print('Hello world', end=' - GVR\n')
 
 ## Example 2
 
-Lets write a simple program that takes the name, age and weight of the user then we display the values to the screen
-``` python
+Let us write a simple program that takes the name, age and weight of the user then we display the values to the screen
+``` Python
 # A simple program that takes the name, age and weight
 # of the user then display the values to the screen
 
 current_year = 2020
-first_name = input('Enter your first name: ')
-last_name = input('Enter your last name: ')
-age = int(input('Enter your age: '))
+first_name = input('Enter our first name: ')
+last_name = input('Enter our last name: ')
+age = int(input('Enter our age: '))
 
-# you can write the above line seperately as below
-# age = input('Enter your age: ') # age is a string
+# we can write the above line seperately as below
+# age = input('Enter our age: ') # age is a string
 # age = int(age) # we convert the age to an integer
 
-weight = float(input('Enter your weight in kg: '))
+weight = float(input('Enter our weight in kg: '))
 
 print("First Name:", first_name)
 print("Last Name:", last_name)
@@ -93,11 +93,18 @@ print("Age:", age, " - year of Birth:", current_year - age)
 ## Practicals
 
 1. write a program that finds the sum then the average of five numbers, by asking the user to enter then as floats. Display all the inputs, the sum and then the average. [Use descriptive outputs]
-1. Write a simple program to simulate an interview for python developers. Display the anwsers in an essay form, with heading, `Your responds` .
+1. Write a simple program to simulate an interview for Python developers. Display the anwsers in an essay form, with heading, `Your responds` .
 
 ## Summary
 
-* Use `input(prompt)` to take input from the *std.in*, `promt` is the message you pass across to the user, as a guide.
+* Use `input(prompt)` to take input from the *std.in*, `promt` is the message we pass across to the user, as a guide.
 * Use `print(objects)` to display comma seperated objects to the screen.
-* You have to cast the value of an input to the desire value since by default, it is a string.
+* We have to cast the value of an input to the desire value since by default, it is a string.
 
+
+#
+[flush-resource-site-1](https://stackoverflow.com/questions/15608229/what-does-prints-flush-do)
+[flush-resource-site-2](https://www.tutorialspoint.com/How-to-flush-the-internal-buffer-in-Python)
+[google-site](https://google.com)
+[Programiz-site](https://www.programiz.com/Python-programming/methods/built-in/print)
+[pydoc-site](https://docs.Python.org/3.8/tutorial/inputoutput.html?highlight=input)
