@@ -17,7 +17,7 @@ Boolean values are case sensity. Upper-case `T` for `True` and `F` for `False` ,
 
 ## Comment
 
-A comment is a piece of text that mostly should tells why or what you are trying to achieve. The `#` symbol, placed ( inserted) at the beginning of the line, comments the line ( the line is ignored by the interpreter).
+A comment is a piece of text that mostly should tells why or what we are trying to achieve. The `#` symbol, placed ( inserted) at the beginning of the line, comments the line ( the line is ignored by the interpreter).
 
 ## Examples
 
@@ -55,6 +55,6 @@ Whatever that comes after the `#` would be ignored.
 * A boolean value is `True` or `False` .
 * These values are generated during comparison.
 * A comment is supposed to explain, "the" what or why in the code ( line)
-* You can also use it to state how you want to reach you solution
+* We can also use it to state how we want to reach our solution
 * Use `#` to create a comment
 

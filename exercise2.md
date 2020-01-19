@@ -1,5 +1,5 @@
 # Exercise 2 ( Data types)
-A data type is basically, the kind of value ( data) a variable can hold or store. Think of them as the kind of data you use in your program. More technically, a data type dictates the size of memory to be allocatted for a value.
+A data type is basically, the kind of value ( data) a variable can hold or store. Think of them as the kind of data we use in our program. More technically, a data type dictates the size of memory to be allocatted for a value.
 
 There are basically two types of data which are written in different forms. We have Numbers and Text (broadly speaking). Have a brief read on [C's data type][Cdata-type-size-site] - by the way, Python was implemented in [C][C-site].
 
@@ -18,7 +18,7 @@ Eg of str: "", "John", 'Github', 'Python', "swift Python", '3', '-3.464', '+32-1
 * `""` or `''` denote an empty string
 * '2' is not the same as 2. Why? this is because `'2'` is a `string` and `2` is an `integer` . `'2'` is a string because it is enclosed in a quote.
 * A string is basically a text of any characters or just a sentence
-* If you want an output say, `this is mashud's car` , then what you have to do is to use double quote. `Eg: "Mashud's car"` or you have to escape it. `Eg: 'Mashud\'s car'` . We encourage the former.
+* If we want an output say, `this is mashud's car` , then what we have to do is to use double quote. `Eg: "Mashud's car"` or we have to escape it. `Eg: 'Mashud\'s car'` . We encourage the former.
 
 ## When to use `int` or `float` 
 
@@ -39,7 +39,7 @@ pi = 3.14
 
 ## Type hinting
 
-Python has a way hinting the type of data passed into a variable. This is done by annotating the variable. It follows this format, `var_name:type=value` . Note that this is not neccearily something you really should do - not compulsory. It will help catch some error though. It is your choice to use it.
+Python has a way of hinting the type of data passed into a variable. This is done by annotating the variable. It follows this format, `var_name:type=value` . Note that this is not neccearily something we really should do - not compulsory. It will help catch some error though. We the developers ( the team) decide whether we would like to use it or not.
 
 ``` Python
 age:int = 34
@@ -49,7 +49,7 @@ weight:float = 120.50
 
 ## Variable name rules
 
-Consider these whenever you want to create a variable.
+Consider these whenever we want to create a variable.
 
 * The variable must begin with a letter, `[a - z, A - Z]` or an underscore `_` 
 * followed by any other character(s) such as a letter `[a - z, A - Z]` , numbers `[0 -9]` or an underscore `_` 
@@ -60,7 +60,7 @@ Consider these whenever you want to create a variable.
 
 ## Practicals
 
-1. Look into `Exercise 1 ( creating a variable)`, and for the 10 varaibles you created earlier, state their data types
+1. Look into `Exercise 1 ( creating a variable)` , and for the 10 varaibles we created earlier, state their data types
 
 1. What will be the data type of the following values, `'University of github', 'swift-Python', 100, 12.0, 12, 'B+', '1 + 1', 345.0, 360, 3.1432, "sipping ice cream from a linux cup"` 
 
@@ -68,7 +68,7 @@ Consider these whenever you want to create a variable.
 
 ## Summary:
 
-* Data type refers to the kind of values you make use of in your program
+* Data type refers to the kind of values we make use of in our program
 * The Basic data types we have are the integer (int), float (float) and string (str) but there are also boolean values.
 * A string made up of zero or more charaters enclosed in a single and a double quote. `name = ''` is an empty string.
 * Use int for counting values and float for measuring or continous values.
