@@ -1,10 +1,7 @@
 # Exercise 5 c (Implementation of a solution)
+In this stage we write the code based on the design and then go further on to test and debug our code. We are going to change the design to a valid Python code.
 
-> We'd implement the desgin from `exercise 5 b (Designing of a solution)` 
-
-In this stage we write the code based on the design and then go further on to test and debug our code. We are going to change the design to a valid python code.
-
-``` python
+``` Python
 '''
 The inputs:
     totalNumberStudent: int = 5
@@ -18,16 +15,16 @@ The processes:
     numberBelowAverage = number of elements less than the average
 
 The output:
-    sumOfScores
-    averageOfScores
-    numberAboveAverage
-    numberBelowAverage
+    sumOfScores: float
+    averageOfScores: float
+    numberAboveAverage: int
+    numberBelowAverage: int
 '''
 ```
 
 ## Code 1
 
-``` python
+``` Python
 # The inputs
 totalNumberStudent = 5
 
@@ -95,7 +92,7 @@ print(numberBelowAverage, "scored below average")
 
 ## Code 2
 
-``` python
+``` Python
 # The inputs
 totalNumberStudent = 5
 
@@ -121,7 +118,7 @@ averageOfScores = sumOfScores / totalNumberStudent
 # initialize two variables, numberAboveAverage and numberBelowAverage to zero
 # compare each student score with the average
 # if the score is greater than the average, add one to numberAboveAverage else (it may mean it equal to or less than) so we check if it is less than else it will be equal, which is of no interest so do nothing.
-# we will you a loop here also
+# we will use a loop here also
 
 numberAboveAverage = 0
 numberBelowAverage = 0
@@ -142,12 +139,11 @@ print(numberBelowAverage, "scored below average")
 
 ## Practicals
 
-Implement your design from the practicals in `exercise 5 b (Design of a solution)` 
+Implement the design from the practicals in `exercise 5 b (Design of a solution)` 
 
 ## Summary
 
-* Implementation phase is where you code the design from the analysis
+* Implementation phase is where we code the design from the analysis
 * Implementaion is not the last phase of software developement
-* You have to test and maintain the software and ofcourse, you have to document it
-* From the analysis, design and implementation, surely the documentation speaks for itself
+* We have to test, maintain and document our programs to actually make them software
 
