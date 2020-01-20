@@ -1,15 +1,15 @@
 # Exercise 8 (String formatting)
-There are a lot of ways to format your output which makes manipulation of your output more readable. We'd go with the `f"... {}"` approach.
-The `{}` provides the means to insert values into your string as you write it out, and the `f` means format.
+There are a lot of ways to format our output which makes manipulation of our output more readable. We'd go with the `f"... {some_value}"` approach.
+The `{}` provides the means to insert values into our string as we write it out, `some_value` is the value you pass into the string and the `f` means format. The string must, begin with the `f` .
 
-# Example
+## Example
 
-``` python
+``` Python
 # Consider a simple program to take the users
 # name and age and then output them to the screen
 
-user_name = input("Enter your name: ")
-user_age = input("Enter your age: ")
+user_name = input("Enter name: ")
+user_age = input("Enter age: ")
 
 output = f"User name: {user_name}\nUser age: {user_age}"
 
@@ -26,15 +26,15 @@ area = 0.5 * base * height
 print(f"The area of a triangle of height, {height} and base, {base} has an area of {area}")
 ```
 
-# Practicals
+## Practicals
 
-Using the new concept in this exercise and the white white space character, `\n` , write a program that accepts from the user, inputs, name, age, sex and hobby. Output a descriptive essay of the values you have taken.
+Using the new concept in this exercise and the white space character, newline - `\n` , write a program that accepts from the user, inputs, name, age, sex and hobby. Output a descriptive essay of the values taken.
 
-> You extend this and take as many inputs as possible.
+> Be curious and creative, take as many inputs as possible.
 
-# Summary
+## Summary
 
 * One may use `f"... {}"` to format a string
 * `f` - means format
-* `{}` allows you to insert values directly into the string
+* `{}` allows us to insert values directly into the string
 
