@@ -1,8 +1,8 @@
 # Exercise 13 (Some built-in functions)
 
-> We really recommend you check out the [python doc](https://python.org), see the library reference and click on the built-in functions.
+> We really recommend you check out the [python doc][pydoc-site], see the library reference and click on the built-in functions.
 
-In the previous chapter we looked into function and we created a couple of our own. Python comes packaged with some function and these functions are known the built-in functions.
+In the previous exercise, `Exercise 12 (Functions)` , we looked into function and we created a couple of our own. Python comes packaged with some function and these functions are known as the built-in functions.
 
 ## Some built-in functions
 
@@ -75,14 +75,16 @@ print(ord('A'))
 
 ## Practicals
 
-* Implement a function known as `all(iterable)` . This function returns `True` if all the elements of the `iterable` is `True` or the `iterable` is empty, else `False` .
-* Implement a function known as `any(iterable)` . This function returns `True` if all the elements of the `iterable` is `True` . If the iterable is empty, return False.
+* Implement a function known as `all(iterable)` . This function returns `True` if all of the elements of the `iterable` is `True` or the `iterable` is empty, else `False` .
+* Implement a function known as `any(iterable)` . This function returns `True` if any of the elements of the `iterable` is `True` . If the iterable is empty, return False.
 * Implement the `abs(x)` function where `x` , is a number.
 * Implement a function that returns the minimum and maximum numbers in given list. Don't use the built-in function `min` and `max` .
 
 ## Summary
 
-* Python came with some functions know as the built-in functions
-* These functions makes working in python much more easier and flexible without you having to implement your own version of that function.
-* Built-in functions does not change the object
+* Built-in functions make working in python much more easier and flexible without you having to implement your own version of any of those function.
+* Built-in functions does not change the object.
+
+#
+[pydoc-site]:(https://python.org)
 
