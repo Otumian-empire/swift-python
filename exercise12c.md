@@ -4,11 +4,11 @@
 
 ## Function with many arguments
 
-Some time one'd like to pass plenty argument into a function and thus one is forced to give the function numerous parameters on creation but there is a very simple approach in python.
+Some time we would like to pass plenty argument into a function and thus one is forced to give the function numerous parameters on creation but there is a very simple approach in Python.
 
 ### Example
 
-``` python
+``` Python
 # A function the takes a number of strings as argument and returns their length
 
 def many_args(s1, s2, s3, s4, s5):
@@ -22,8 +22,8 @@ many_args('sandy', 'jude', 'mani', 'desmond', 'peter')
 
 # what the heck, what if there were about 1000's of args?
 
-# better version is to use the tuple argument, *arg_name
-# so every thing you pass is seen as a tuple does we can iterate easily
+# better version is to use the tuple argument, *arg_name - the takeaway is `*` 
+# all the argument passed is seen as a tuple object thus iteration is feasible
 
 def many_args(*s):
     for i in s:
@@ -33,9 +33,9 @@ many_args('sandy', 'jude', 'mani', 'desmond', 'peter', 'sandy', 'jude', 'mani', 
 
 ```
 
-## Note
+### Note
 
-* You can do some do `some_name = func_name` then do, `some_name()` .this will work just like `func_name()` 
+* You can do `some_name = func_name` then do, `some_name()` .this will work just like `func_name()` 
 
 ## Practicals
 
@@ -45,11 +45,13 @@ many_args('sandy', 'jude', 'mani', 'desmond', 'peter', 'sandy', 'jude', 'mani', 
 
 * A function is simply a block of code than can be called and arguments be passed to it
 * function definition 
-    ```python
+
+    ```Python
     def function_name(some_args):
         # some code
     ``` 
-* you can call the function by doing `func_name(some_args)` 
+
+* we can call the function by doing `func_name(some_args)` 
 * A function allows resue of code
 * A function can be used in any part of our code
 * paramter are passed into the function when creating the function
