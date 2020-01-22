@@ -3,30 +3,29 @@ A set is a mutable sequence with no duplicates. Just like a list, but no duplica
 
 ## Structure of a set
 
-``` python
-# set structure
-
-sample_set = {1, 2, 3}
-
+``` Python
 # empty list
-empty_list = set()
+empty_list = set()  # not {}, this is a `dict` 
 
-# the above empty set is not the same as {}
+# set structure
+sample_set = {1, 2, 3}
 ```
 
 ## Casting
 
-You may cast any sequence to a set by passing the sequence as an argument to `set()` . This returns a unique elements of the sequence.
+We may cast any sequence to a set by passing the sequence as an argument to `set()` . This returns a unique elements of the sequence.
 
-``` python
+``` Python
 # str to set
 name = "Gangliona Messian"
 set_str = set(name)
+
 print(set_str)
 # output-> {'e', 'o', 'i', 'l', 'M', 'g', 'n', ' ', 's', 'a', 'G'}
 
 my_list = [1, 2, 3]
 my_set = set(my_list)
+
 print(my_set)
 # output-> {1, 2, 3}
 ```
@@ -50,7 +49,7 @@ Assume we have two sets, A anf B.
 
 ## Examples
 
-``` python
+``` Python
 # Let our two sets be
 set_a = {1, 2, 3, 6}
 set_b = {3, 4, 5, 6}
@@ -116,7 +115,7 @@ Implement your own version of
     - update
     - isset - it check is a sequence has no duplicate ( remember `count` )
 
-> make use of all the we've learns.
+> make use of all the we've learnt.
 
 ## Summary
 
