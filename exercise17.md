@@ -1,9 +1,9 @@
 # Exercise 17 (Dictionary)
-A dictionary just like a list, tuple and a set which are sequential and number indexed, is rather key-value paired. You reference with keys instead of values
+A dictionary just like a list, tuple and a set which are sequential and number indexed, is rather key-value paired. We reference with keys of the values.
 
 ## Structure of a dictionary
 
-``` python
+``` Python
 # dict_var = { key : value }
 
 # empty dictionary
@@ -21,7 +21,7 @@ profile = {
 
 Casting is done with `dict()` 
 
-``` python
+``` Python
 # passing a key word and a value
 
 # dict(key-word=value, ... )
@@ -42,9 +42,9 @@ print(my_tupled_list)
 
 ## Indexing and updating a dictionary
 
-Indexing and updating is done just one would do to a list.
+Indexing and updating is done just as we would do to a list.
 
-``` python
+``` Python
 # consider this dictionary
 profile = {
     'name': 'John Doe',
@@ -53,7 +53,7 @@ profile = {
 }
 
 # get the name and job
-name = profile[name]
+name = profile['name']
 job = profile['job']
 
 print(f"Candidates name is {name} and works, {job}")
@@ -62,7 +62,7 @@ print(f"Candidates name is {name} and works, {job}")
 profile['age'] = 30
 
 # add a new key
-profile['lang'] = 'python'
+profile['lang'] = 'Python'
 
 # delete a key to delete a value usind - del
 del profile['age']
@@ -84,7 +84,7 @@ del profile['age']
 
 ## Examples
 
-``` python
+``` Python
 # empt dict
 profile = dict()
 
@@ -126,7 +126,7 @@ print(height)  # -> 130
 
 # but height won't be added to the dict
 # use set default, update or dict[key] = value
-if 'height' no in profile.keys():
+if not 'height' in profile.keys():
     # any of this would work
     profile['height'] = 120
     # profile.update(height = 120)
@@ -154,7 +154,7 @@ print(len(new_profile) == len(profile))
 
 Looping is the same every where in a list, set and tuple, in even a string, but for a dictionary we may loop using a key or and value.
 
-``` python
+``` Python
 # consider this sample dictionary
 profile = {
     'name': 'John Doe',
