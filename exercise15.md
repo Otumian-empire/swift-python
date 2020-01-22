@@ -1,9 +1,9 @@
 # Exercise 15 (Tuple)
-A tuple is a comma seperated values and by conversion delimited by an open and closed brackets - parentheses. A tuple is just like a list a tuple is immutable - can not be altered after creation unlike a list.
+A tuple is a comma seperated values and by conversion delimited by an open and closed brackets - parentheses, `()` . A tuple is just like a `list` but a tuple is immutable - can not be altered after creation unlike a list.
 
 ## Structure of a Tuple
 
-``` python
+``` Python
 sample_tuple = 1, 2, 3
 
 # a tuple with brackets
@@ -12,15 +12,18 @@ tuple_with_bracket = (1, 2, 3)
 # thus an empty tuple
 empty_tuple = ()  # an empty list, []
 
+# empty tuple object
+tup_object = tuple()
+
 # to verify this try type(sample_tuple) and type(tuple_with_bracket)
-# you should see some with tuple
+# we should see some with tuple
 ```
 
 ### Note
 
 A single element tuple can be created by simply ending the statement with a comma
 
-``` python
+``` Python
 # this is also a tuple
 single_element_tuple = 1,
 
@@ -38,9 +41,9 @@ print(type(not_single_element_tuple))
 
 ## Pros and Cons of a Tuple
 
-Most of the thing you wish to do to a list, you may do to a tuple. Some of the things you can't do to a tuple is to mutate it - change it's content after initialization.
+Most of the thing we wish to do to a list, we may do to a tuple. Some of the things we can't do to a tuple is to mutate it - change it's content after initialization.
 
-``` python
+``` Python
 my_tuple = (1, 2, 3)
 
 # indexing
@@ -70,7 +73,7 @@ sample_tup = 1,
 sample_tup.append(2)
 sample_tup.extend((2,3))
 
-# but you can contatenate with +=
+# but we can contatenate with +=
 sample_tup += 2, 3
 print(sample_tup)  # (1, 2, 3)
 # What happended was that we concatenated 1, and 2, 3 and 
@@ -79,9 +82,9 @@ print(sample_tup)  # (1, 2, 3)
 
 ## Casting
 
-You may cast - convert any iterable - a sequential object such as a `list` and `string` to a tuple but not an integer because you can not loop over an integer. This can be done using `tuple(sequence)` .
+we may cast - convert any iterable - a sequential object such as a `list` and `string` to a tuple but not an integer because we can not loop over an integer. This can be done using `tuple(sequence)` .
 
-``` python
+``` Python
 # casting a list to a tuple
 my_list = [1, 2, 3]
 my_tuple = tuple(my_list)
@@ -94,7 +97,7 @@ print(tuple_str)
 
 ## Practicals
 
-Try to implement the practicals in exercise 14 (List).
+Try to implement the practicals in `Exercise 14 ( List)` .
 
 ## Summary
 
