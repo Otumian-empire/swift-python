@@ -1,13 +1,11 @@
-# Exercise 14 (List)
+# Exercise 14 ( List)
 We have had our fill with lists but here we kind of go much into it.
-
-## What is a list
 
 As already know, a `list` is a collection of comma seperated objects, where by the collection is delimitered by an opened and closed square bracket.
 
-### Exampls
+## Examples
 
-``` python
+``` Python
 num_list = [1, 2, 3, 4, 5]
 
 str_list = ['1', '2', 'Jonas', 'maiduguri', 'samoa']
@@ -17,19 +15,19 @@ bool_list = [True, False, False, True]
 
 ## kinds of list
 
-There are basically two kinds of list in python, the one dimensional list - a single list and then the multi-dimensional list - this can 2D, 3D, etc
+There are basically two kinds of list in Python, the one dimensional list - a single list and then the multi-dimensional list or nested list - these are 2D, 3D, etc
 
 ### One Dimensional list
 
-``` python
+``` Python
 # sample of 1D list
 num_list = [1, 2, 3, 4, 5]
 ```
 
 ### Multi-dimensional list
 
-``` python
-# samples of XD list
+``` Python
+# samples of XD list - form some int x >= 1
 
 # 2d list
 list_list = [
@@ -47,60 +45,118 @@ list_list = [
 
 ## Accessing elements of a list
 
-The elements of a list are indexed from 0 to (n - 1), where n is the size of the list. To access an element from the list, use its index.
-    ``` python
-    my_list = [1, 'gnu', 'swift', 'kickass']
-    
-    print(my_list[0])  # 1
-    print(my_list[1])  # gnu
-    print(my_list[2])  # swift
-    print(my_list[3])  # kickass
+The elements of a list are indexed from `0 to (n - 1)` , where `n` is the size of the list. To access an element from the list, use the elements index.
 
-    # list slicing
-    # syntax list_obj[start:end] - the end is esclusive
-    print(my_list[1:3]) # [gnu, swift]
-    print(my_list[0:3]) # [1, gnu, swift]
-    print(my_list[:3]) # [1, gnu, swift]
-    print(my_list[1:]) # [gnu, swift, kickass]
-    ```
+``` Python
+# index =  0    1      2        3
+my_list = [1, 'gnu', 'swift', 'kickass']
+
+print(my_list[0])  # 1
+print(my_list[1])  # gnu
+print(my_list[2])  # swift
+print(my_list[3])  # kickass
+
+# using negative indices 0 as if moving backwards from `0` 
+print(my_list[-1])  # kickass
+print(my_list[-2])  # swift
+print(my_list[-4])  # 1
+```
+
+For a multi-dimensional list of say `x` , we provide `x` indices instead.
+
+``` Python
+# this is a 2D list
+my_list = [
+    [1, 2, 3, 4],
+    ['go', 'py', 'js', 'kt']
+]
+
+# we use 2 indices
+# the first goes into the main list
+# the second the branch list
+
+print(my_list[0])  # -> [1, 2, 3, 4] 
+print(my_list[1])  # -> ['go', 'py', 'js', 'kt']
+
+print(my_list[0][0])  # -> 1
+print(my_list[1][2])  # -> 'js'
+```
+
+### Note
+
+Try thinking in rows and columns with multi-dimensional lists
+
+``` Python
+
+my_list = [
+    [1, 2, 3, 4],
+    ['go', 'py', 'js', 'kt']
+]
+
+# `4` is in row `1` column `4` .
+# knowing well that index starts from `0` , we substract `1` from the rows and cols
+# thus `4` can be indexed with `[1-1][4-1]=[0][3]` 
+```
+
+## List slicing
+
+List slicing allows us to sublist the list object - slice the list from one `index` to another. Think about slicing of an actual bread.
+
+Just like indexing, but here we provide a range, a `start` and an `end` with a colon, `:` , Something similiar to, `list_obj[start:end]` . List slicing works like the `range(start, end)` function, the `end` is exclusive.
+
+``` Python
+my_list = [1, 'gnu', 'swift', 'kickass']
+
+print(my_list[1:3]) # [gnu, swift]
+print(my_list[0:3]) # [1, gnu, swift]
+print(my_list[:3]) # [1, gnu, swift]
+print(my_list[1:]) # [gnu, swift, kickass]
+```
 
 ## List Operations
 
-1. The `+` operator is used to add ( concatenate) lists
-    ``` python 
-    # Adding one list to another
-    my_list = [1,2,3]
-    s_list = ['e', 'u', 'o']
+The addition operator, `+` operator is used to add ( concatenate) lists.
 
-    f_list = my_list + s_list
+``` Python
+# Adding one list to another
 
-    print(f_list)
-    ``` 
+my_list = [1, 2, 3]
+s_list = ['e', 'u', 'o']
 
-1. `*` operation on a list object multiplies the list n time.
+f_list = my_list + s_list
 
-    ```python
-    b_list = [2]
-    f_list = b_list * 4
+print(f_list)
 
-    print(f_list)
-    ```
+``` 
 
-1. `in` to check the if an object exists in a list.
-    ``` python
-    my_list = [1,2,3]
+The multiplication operator, `*` on a list object multiplies the list `n` time, for some integer value `n` > 1.
 
-    # check if the list contains 4
-    if 4 in my_list:
-        print('The list has a four')
-    else:
-        print('well, there is no four')
-    ```
+```Python
+b_list = [2]
+f_list = b_list * 4
+
+print(f_list)
+```
+
+The `in` operator, checks if an object exists in a list ( or an iterable object).
+
+``` Python
+my_list = [1, 2, 3]
+
+# check if the list contains 4
+# or 4 is in the list
+
+if 4 in my_list:
+    print('The list has a four')
+else:
+    print('well, there is no four')
+```
 
 ## Some list functions
-| Function | what it does|
-|:--------|-----------:|
-| append(obj) | adds object to the end of the list object|
+
+| Function | Description |
+|:-------- | ----------:|
+| append(obj) | adds object to the end of the list object |
 | extends(obj) | adds object to the end of the list object as a whole|
 | index(obj) | returns the index of obj in the list object|
 | insert(index, obj) | insert obj at index of list object|
@@ -112,7 +168,7 @@ The elements of a list are indexed from 0 to (n - 1), where n is the size of the
 | clear() | removes all the elements of the list|
 | del list_obj[index] | deletes object at index|
 
-``` python
+``` Python
 name_list = ['john']
 
 # append
@@ -149,6 +205,7 @@ name_list.sort(reverse = True)
 
 # clear
 name_list.clear()
+
 # or just set name_list to an empty list
 name_list = []
 
@@ -157,42 +214,50 @@ name_list = []
 del name_list[1]
 ```
 
+### Note
+
+`del name_list` would delete `name_list` from memory.
+
 ## Practicals
 
 > this is supposed to be fun
 
-* Create a function for each of the following, using any means possible without cutting corners.( explicitly using built-in function)
-    1. `addition` - this function takes two objects as argument,  and returns their sum if they are numbers, that is a float or an int, but when one or both are strings return a concatenation of both. Remember type casting.
+* Create a function for each of the following, using any means possible without cutting corners.( no using of built-in function - we have go to try harder)
+    1. `addition` - this function takes two objects as argument,  and returns their sum if they are numbers, that is a float or an int.
     1. `subtraction` - this function takes two objects as argument, returns the resut of subtracting the second from the first.
     1. `division` - this function takes two objects as argument, returns the result from dividing the first by the second. Remember that zero division is not allowed thus check if the second is zero.
     1. `multplication` - this function takes two objects as argument, returns the product of the two.
-* Write a function, that takes a list as an argument of various objects, return a list of all the objects that are numbers ( that is integer and float).
+
+* Write a function, that takes a list of various objects as an argument, return a list of all the objects that are numbers ( that is integer and float).
+
 * Write a function taking a list of various objects as argument, return the number of each object in the list.
-* Write a function that takes a list of integers as an argument, remove ( delete) any element that has the same number type as its `index + 1` .( If the `index + 1` is even and the element is even remove the element, like while odd except when the `index` is 0), looping though the list `n` times, `n` is the size of the list.
 
-    
+* Write a function that takes a list of integers as an argument, remove ( delete) any element that has the same parity as its `index + 1` .( If the `index + 1` is even and the element is even, remove the element. If number is odd and `index + 1` is odd, remove element, except when the `index` is 0), looping `n -1` times, where `n` is the size of the list.
 
-``` python
+``` Python
 s = [2, 6, 18, 11, 4]
 # 6 is removed - loop 1
+
+s = [2, 18, 11, 4]
 # 18 is removed - loop 2
+
+s = [2, 11, 4]
 # None is removed - loop 3
+
+s = [2, 11, 4]
 # None is removed - loop 4
-# None is removed - loop 5
 
 s = [2, 11]
 ```
 
-* This practicals is the same as the above but in the above as you remove the elements which passes the condition, the list is changed too. In here, you remove all at a go.( It is better you use a list rather than a loop in removing the elements and do not remove object by index)
+* This practical is the same as the above but in the above as we remove the elements which passes the condition, the list is changed too. We don't want to remove the element as the list chnages - that in a way does really suffices. Consider the code below:
 
-    
-
-``` python
+``` Python
 # i = index + 1
 s = [2, 6, 18, 11, 4]
 i = [1, 2,  3,  4, 5]
 
-# only 6 will be removed
+# only 6 will be removed because it is in parity with its index + 1
 s = [2, 18, 11, 4]
 ```
 
@@ -201,9 +266,9 @@ s = [2, 18, 11, 4]
 * A `list` is a collection of comma seperated objects
 * A literal list is created, `name_of_list_object = [a, b, c, ... ]` 
 * There can be a nested list
-* Pass the index of the element of interest into a square bracket after the name of the list object. `Eg: list_obj[1]` 
-* You can use `+` operator to concatenate one list to another
-* You can use `*` operator to repeat the list n time. `Eg: list_obj * 3` 
-* You can check if an object is in a list by using the `in` keyword. `Eg: obj in list_object` 
+* Pass the index of the element of interest into a square bracket after the name of the list object. `Eg: list_obj[1]` returns the element at that index
+* We can use `+` operator to concatenate one list to another
+* We can use `*` operator to repeat the list n time. `Eg: list_obj * 3` 
+* We can check if an object is in a list by using the `in` keyword. `Eg: obj in list_object` , this returs a boolean value
 * Use the dot operator to call a list function ( aka method). `Eg: list_object_name.function_name(some args)` 
 
