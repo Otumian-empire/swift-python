@@ -5,7 +5,7 @@ There are certain important concepts when it comes to OOP that makes software en
 
 ## OOP Concepts
 
-There are some concepts that runs through OOP in all OO langiages:
+There are some concepts that runs through OOP in all OO languages:
 
 * Class
 * Inheritance
@@ -13,7 +13,7 @@ There are some concepts that runs through OOP in all OO langiages:
 * Abstraction  
 * Encapsulation
 
-> OOP in python is basically creation of classes and inheritance.
+> OOP in Python is basically creation of classes and inheritance.
 
 ### Note
 
@@ -21,14 +21,15 @@ These OOP concepts cuts across all Object Oriented Programming languages but the
 
 ## Inheritance
 
-Inheritance allows you to replicate/extend/inherit/modify/use another classes (objects) attributes and methods without having to re-write the whole class again for the second class. So think about any item/product that has been produced and used over some time now. You realise that there are actually different versions of the original. So, say there is version 1, 2 3, and so on. How do you think version 2, 3, and the others came about? The company developed the v1 and later started v2? or they rather improved on v1 to get v2 then on v2 to get v3? Well, these two are feasible actually, but as you have argued in your head with yourself, the latter approach is the solution. Yes, the latter approach which is improving upon v1 to get v2 and so on works best.
+Inheritance allows us to replicate/extend/inherit/modify/use another class' (object's) attributes and methods without having to re-write the whole properties and methods again for the second class. So think about any item/product that has been produced and used over some time now. You realize that there are actually different versions of the original. So, say there is version 1, 2, 3, and so on. How do we think version 2, 3, and the others came about? The company developed the v1 and later started v2? or they rather improved on v1 to get v2 then on v2 to get v3? Well, these two are feasible actually, the latter approach is the solution. The latter approach which is improving upon v1 to get v2 and so on works best.
+
 So v1 grows into v2, and thats inheritance or something like that is.
 
 ### Structure of Inheritance
 
-Just understand that we basically have two class and one of these two classes would like to use the attributes and methods of the other class.lets create a `Animal class` and `Cat class` , where `Cat` inherits the `Animal` .
+Just understand that we basically have two classes and one of these two classes would like to use the attributes and methods of the other class. Lets create an `Animal class` and a `Cat class` , where `Cat` inherits the `Animal` .
 
-``` python
+``` Python
 class Animal:
 	def __init__(self, name, color, age):
 		self.name = name
@@ -39,9 +40,9 @@ class Cat:
 	pass
 ```
 
-For one class (the child class)  to inherit from another class (the parent class), you pass the name of the parent class, like how you pass an argument to a function, into a parenthesis before the colon, `:` .
+For one class (the child class)  to inherit from another class (the parent class), we pass the name of the parent class, just as we would pass an argument to a function, into a parenthesis before the colon, `:` .
 
-``` python
+``` Python
 class Parent:
 	pass
 
@@ -53,7 +54,7 @@ class Child(Parent):
 
 Lets have a look at the code below, 
 
-``` python
+``` Python
 # sharing of common functionanlity using classes
 
 # Super (Parent) class
@@ -85,7 +86,7 @@ granny.bark()
 
 ## Example with multiple inheritance
 
-``` python
+``` Python
 # there are three class
 # Human, Robot and Hybrid
 # Hybrid inherits froms
@@ -110,7 +111,7 @@ class Hybrid(Human, Robot):
 
 Use the `super()` to access the original methods in the base class.
 
-``` python
+``` Python
 class Cat:
     def __init__(self, color, legs):
         self.color = color
@@ -134,7 +135,7 @@ class Tiger (Cat):
         # constructor method of the child class to match 
         # the parent class
         super().__init__(color, legs)
-        # this saves you from doing
+        # this saves us from doing
         # self.color = color
         # self.legs = legs
         self.is_big = is_big
