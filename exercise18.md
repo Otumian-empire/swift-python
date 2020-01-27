@@ -1,5 +1,5 @@
 # Exercise 18 (Execptions)
-An exception is an error one gets when the code is esecuted. Sometimes, this is also know as runtime error.
+An exception is an error generated when the code is executed. Sometimes, this is also know as runtime error because we only get such error when the code is running.
 
 ## Some types of exceptions
 
@@ -18,11 +18,11 @@ There are a lot of Exceptions and We'd just list some of the mostly seen ones.
 
 ## Handling exceptions
 
-We can handle these errors with a `try` and `except` clauses.
+It is import to handle exception in our code as it will prevent the abrupt halting of the software. We can handle these errors with a `try` and `except` clauses.
 
 ### Try and catch structure
 
-``` python
+``` Python
 try:
     # code to check
 except (exceptions to handle):
@@ -31,8 +31,9 @@ except (exceptions to handle):
 
 ### Example 1
 
-``` python
-# lets catch a ZeroDivisionError
+``` Python
+# catch ZeroDivisionError
+# error generated when dividing by zero
 # we shall perform some simple division
 #  where by we take 2 int inputs from the user
 try:
@@ -60,9 +61,9 @@ else:
 
 ### Example 2
 
-Lets try to catch any kind of execption using the `Exception` .
+Lets try to catch any kind of execption using the `Exception` class.
 
-``` python
+``` Python
 # Lets catch an Exception without being specific
 
 try:
@@ -81,7 +82,7 @@ except Exception as z:
 
 Lets catch multiple exceptions - as a tuple
 
-``` python
+``` Python
 try:
     numerator = int(input('Enter the numerator: '))
     denominator = int(input('Enter the denominator: '))
@@ -97,7 +98,7 @@ except (ZeroDivisionError, NameError, ValueError) as e:
 
 We can raise our own exception using the `raise` keyword.
 
-``` python
+``` Python
 # let raise our own exception
 # so we take an input from the user and we expect an even number else,
 #  we raise the exception
@@ -106,20 +107,19 @@ try:
     user_input = int(input('Enter an even number: '))
     if user_input % 2 != 0:
         raise ValueError('Even number expected.')
-        # if you don't know what kind of exception to raise
+        # if we don't know what kind of exception to raise
         # just raise Exception
     else:
         print(f"Cool, you entered, {user_input}")
 except Exception as e:
     print(f"error: {e}")
-
 ```
 
 ## Practicals
 
-Fix this code:
+Fix this code base on the error message generated:
 
-``` python
+``` Python
 try:
     numerator = input('Enter the numerator: ')
     denominator = int(input('Enter the denominator: '))
@@ -134,7 +134,7 @@ except Exception as z:
 ## Summary
 
 * Exceptions are error we get at runtime
-* BaseException is the Base class of all the exceptions
+* `Execption` class catches all exceptions in general
 * Use `try` and `catch` to handle exceptions
-* Raise exception using, `raise Exception_type(message` )
+* Raise exception using, `raise Exception_type(message)` 
 
