@@ -2,17 +2,20 @@
 
 ## Practical
 
-> *We belive that at this stage, with patiece, persistence and clear mind and intension to actually solve a problem, you can so many things, now.*
+> *We belive that at this stage, with patience, persistence and clear mind and an intension to actually solve a problem, you can do so many things, now. Surely some will be challenging but through this you become better*
 
 Fixed this code. Do not panic, it is actually easier than you may sweat. Some little assistance.
 
-* try to understand what every component (method) does
-* run the code multiple times and actually write down something
-* break it and see what happens by stabbing it with variuos input types - jot something down - you are becomming a hacker
+* try to understand what every component (method) does.
+    - copy the method somewhere and run it
+    - or just comment the others out and run it
+* run the code multiple times and actually write down something. Try to trace the execution of the code.
+* break it and see what happens by stabbing it with various input types - jot something down - you are becomming a hacker.
+    - stabbing means, pass some data to the method or attribute directly.
 * try negative values too - just break it and fix it
-* add comments where you think necessary
+* add comments where you think necessary - try commenting the code as you may come back in a week or more time.
 
-``` python
+``` Python
 import random  
 # we shall discuss the line above in the next exercise
 
@@ -37,9 +40,9 @@ class Game:
 
         # returns user details
     def game_info(self):
-        strinfo = f"You have ${self.cash} is your asset.. "
-        strinfo += f"and you've place a bet of ${self.bet}"
-        strinfo += f".. Good luck"
+        strinfo = f"You have ${self.cash} in your account.. "
+        strinfo += f"and you've placed a bet of ${self.bet}"
+        strinfo += f".. Good luck ${self.name}"
 
         return strinfo
 
@@ -56,7 +59,7 @@ class Game:
         self.username = newname
 
     # makes sure that the bet is in a fold of 100
-    # before allowing bet
+    # before allowing bet method
     def wager(self, bet):
 
         try:
@@ -87,8 +90,7 @@ class Game:
             # call wager again and pass it, bet
             self.wager(bet)
 
-    # the main function.. Just call this function
-
+    # the main function
     def start_game(self):
         # print user info
         print(self.player_info())
@@ -111,7 +113,7 @@ class Game:
                     print("You are a man who admires risks, we love you..")
 
                 # this is where the random numbers are generated
-                # you can alter this to suite your needa
+                # alter this to suite for a different functionality
                 start, end = 0, 2
 
                 # on this like we use a component from the import
