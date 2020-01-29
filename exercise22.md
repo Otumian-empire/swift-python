@@ -4,167 +4,20 @@ Unit testing is an important part of software engineering. We do unit testing to
 
 ## Some testing methods
 
-``` html
-<table border="2">
-
-    <colgroup>
-        <col width="48%">
-        <col width="34%">
-        <col width="18%">
-    </colgroup>
-    <thead>
-        <tr>
-            <th>Method</th>
-            <th>Checks that</th>
-            <th>New in</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <code>
-                    <span>assertEqual(a, </span>
-                    <span>b)</span>
-                </code>
-            </td>
-            <td>
-                <code><span>a</span>
-                    <span>==</span>
-                    <span>b</span>
-                </code>
-            </td>
-            <td>&nbsp; </td>
-        </tr>
-        <tr>
-            <td>
-                <code>
-                    <span>assertNotEqual(a, </span>
-                    <span>b)</span>
-                </code>
-            </td>
-            <td>
-                <code>
-                    <span>a</span>
-                    <span>!=</span>
-                    <span>b</span>
-                </code>
-            </td>
-            <td>&nbsp; </td>
-        </tr>
-        <tr class="row-even">
-            <td>
-                <code>
-                    <span>assertTrue(x)</span>
-                </code>
-            </td>
-            <td>
-                <code>
-                    <span>bool(x)</span>
-                    <span>is</span>
-                    <span>True</span></code>
-            </td>
-            <td>&nbsp; </td>
-        </tr>
-        <tr>
-            <td><a href="assertFalse" title=".assertFalse"><code><span>assertFalse(x)</span></code>
-            </td>
-            <td><code><span>bool(x)</span> <span>is</span> <span>False</span></code>
-            </td>
-            <td>&nbsp; </td>
-        </tr>
-        <tr class="row-even">
-            <td><a href="assertIs" title=".assertIs"><code><span>assertIs(a, </span> <span>b)</span></code>
-            </td>
-            <td><code><span>a</span> <span>is</span> <span>b</span></code>
-            </td>
-            <td>3.1</td>
-        </tr>
-        <tr>
-            <td><a href="assertIsNot" title=".assertIsNot"><code><span>assertIsNot(a, </span> <span>b)</span></code>
-            </td>
-            <td><code><span>a</span> <span>is</span> <span>not</span> <span>b</span></code>
-            </td>
-            <td>3.1</td>
-        </tr>
-        <tr class="row-even">
-            <td>
-                <code>
-                    <span>assertIsNone(x)</span>
-                </code>
-            </td>
-            <td><code><span>x</span> <span>is</span> <span>None</span></code>
-            </td>
-            <td>3.1</td>
-        </tr>
-        <tr>
-            <td><a href="assertIsNotNone" title=".assertIsNotNone"><code><span>assertIsNotNone(x)</span></code>
-            </td>
-            <td><code><span>x</span> <span>is</span> <span>not</span> <span>None</span></code>
-            </td>
-            <td>3.1</td>
-        </tr>
-        <tr>
-            <td>
-                <code>
-                    <span>assertIn(a, </span> <span>b)</span>
-                </code>
-            </td>
-            <td>
-                <code>
-                    <span>a</span>
-                    <span>in</span>
-                    <span>b</span></code>
-            </td>
-            <td>3.1</td>
-        </tr>
-        <tr>
-            <td>
-                <code>
-                    <span>assertNotIn(a, </span>
-                    <span>b)</span>
-                </code>
-            </td>
-            <td>
-                <code>
-                    <span>a</span>
-                    <span>not</span>
-                    <span>in</span>
-                    <span>b</span>
-                </code>
-            </td>
-            <td>3.1</td>
-        </tr>
-        <tr>
-            <td>
-                <code>
-                    <span>(a,</span>
-                    <span>b)</span>
-                </code>
-            </td>
-            <td><code><span>isinstance(a, </span> <span>b)</span></code>
-            </td>
-            <td>3.2</td>
-        </tr>
-        <tr>
-            <td>
-                <code>
-                    <span>(a, </span>
-                    <span>b)</span>
-                </code>
-            </td>
-            <td>
-                <code>
-                    <span>not</span>
-                    <span>isinstance(a, </span>
-                    <span>b)</span>
-                </code>
-            </td>
-            <td>3.2</td>
-        </tr>
-    </tbody>
-
-</table>
-```
+| Method | Checks that |
+| ------ | ----------: |
+| `assertEqual(a, b)` | `a == b` |
+| `assertNotEqual(a, b)` | `a != b` |
+| `assertTrue(x)` | `bool(x) is True` |
+| `assertFalse(x)` | `bool(x) is False` |
+| `assertIs(a, b)` | `a is b` |
+| `assertNotIs(a, b)` | `a is not b` |
+| `assertIsNone(x)` | `x is None` |
+| `assertIsNotNone(x)` | `x is not None` |
+| `assertIn(a, b)` | `a in b` |
+| `assertNotIn(a, b)` | `a not in b` |
+| `isinstance(a, b)` | `type(a) == type(b)` |
+| `isNotinstance(a, b)` | `type(a) != type(b)` |
 
 ## Example
 
@@ -235,8 +88,10 @@ if __name__ == "__main__":
 Write a unit test - TestCases - for the programs you have written since `exercise 12` .
 
 ## Summary
+
 * UnitTesting is very important in the world of software engineering
 * It checks the correctness of our code
-* to use pythons built-in unit testing package, import it, `import unittest`
-* create a class, `ModuleTest` and subclass `unittest.TestCase`
+* to use pythons built-in unit testing package, import it, `import unittest` 
+* create a class, `ModuleTest` and subclass `unittest.TestCase` 
 * add `if __name__ == "__main__": unittest.main()` to actually run the test when called.
+
