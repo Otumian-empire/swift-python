@@ -1,10 +1,11 @@
 # Exercise 23 (Git)
-As developer, you may want to have different versions of your software and keep them too. You may want to revert to a previous state of a file or even the whole project and a Distributed Version Control System (DVCS) will do that job. One DVCS is [Git][git-site]. We shall look into how to use git minimally.
-You would want to keep your projects on your local server, your disk may corrupt. So you'd need a remote server for keeping your softwares or scripts thus create a free [Github][github-site] account before you proceed, for your own good.
+As developers, we may want to have different versions of our software and keep them too. We may want to revert to a previous state of a file or even the whole project and a Distributed Version Control System (DVCS) will do that job. One DVCS is [Git][git-site]. We shall look into how to use git minimally.
+
+We would want to keep our projects on our local server, our disk could corrupt. Thus we would need a remote server for keeping our softwares or scripts thus we create a free [Github][github-site] account before we proceed any further, for our own good as developers who may wish other developers see and review or even share.
 
 ## Install git
 
-Install Git from [here][git-site] depending on your OS. Do `git --verion` on the commandline to check if git is installed successfully.
+We shall install Git using [this website][git-site], depending on the OS. Afterwards, we do `git --verion` on the commandline to check if git has been installed successfully.
 
 ## Configure git
 
@@ -13,18 +14,20 @@ Open the commandline - power shell for windows.
 * Set user name: `git config --global user.name your_user_name` 
 * Set user email: `git --global user.email your_user_email` 
 
+This actually can be changed for every software we want to create using git, else this configuration is default.
+
 ## Create repository
 
-A repository is basically a folder that contains your code and any other file needed for the proper functioning of your project.
+A repository is basically a folder that contains our code and any other file we may need for the development of our software.
 
-There may be two or more instances where you'd need to create a git repository:
+There may be two or more instances where we would need to create a git repository:
 
-* when you have already created the folder on your PC - local server but not under version control.
-* when the project is already on line under version control
+* when we have already created the folder on our PC, local server, but not under version control.
+* when our project is already online ( remote) under version control.
 
 ### Local repository
 
-When the project is already on your local server and you want it under version control do the following:
+When the project is created on our local server and we want it under version control, we do the following:
 
 * change directory into the folder of interest, `cd ...` 
 * do, `git init` - to start git
@@ -33,24 +36,24 @@ When the project is already on your local server and you want it under version c
 
 When the project already exist online, say on [Github][github-site], do the following:
 
-* Navigate to where you want to create the project
+* Navigate to where we want to create the project
 * do, `git clone https://...` - to have the same version of the remote project
-* or you can do, `git clone https://... repo_name` - where repo name is the name of the new folder you want to keep you files in instead of the original. This doesn't alter naything.
+* or we can do, `git clone https://... repo_name` - where repo name is the name of the new folder we want to keep we files in instead of the original. This doesn't alter naything.
 * then navigate into `repo_name` - this repository comes with the enire version history of the repository.
 
 ## Adding an existing project to remote server
 
-Here you already have the project or say you have finished developing it locally then you finally want to pppush it to the remote repository, do the following:
+Here we already have the project or say we have finished developing it locally then we want to push it to the remote repository, do the following:
 
 * initialize the git repo locally, `git init` 
 * add the files in the local repository, `git add .` 
 * then stage them, `git commit -m "some message"` 
 * now copy the remote repository url and do, `git remote add origin https://...` , where `https://../` is the remote url
-* now send it to the remote repository, `$ git remote add origin https://...` 
+* now send it to the remote repository, `$ git push origin https://...` 
 
 ## Git status
 
-Every file in a VCS has a status which tells you what has been done to the file thus what state the file is in.
+Every file in a VCS has a status which tells we what has been done to the file thus what state the file is in.
 
 ### Table of file status
 
@@ -64,27 +67,28 @@ Every file in a VCS has a status which tells you what has been done to the file 
 
 ## Check file status
 
-do, `git status` to see the status of the files in the current repository.
+we do, `git status` to see the status of the files in the current repository.
 
 ## Track files
 
-do, `git add file_name` to track a single or `git add .` to track the entire files in this particular directory.
+we do, `git add file_name` to track a single or `git add .` to track the entire files in this particular directory.
 
-When you edit the file, the file status will become `modified` , do 
-There are a lot of ways to see the content of a folder and one is using `ls or dir` , depending on your OS. Git has a special command for this, `git status` . Every file when you clone or initial git, all the files will be `untracked` and `unmodified` .check the status as you write to your project.
+When we edit the file, the file status will become `modified` , then we do, `git add file_name` to track file by name, *file_name* or `git add .` to track all the changes made.
+
+There are a lot of ways to see the content of a folder and one is using `ls or dir` for unix/linux or windows respectively, depending on our OS. Git has a special command for this, `git status` . Every file when we clone or initial git, all the files will be `untracked` and `unmodified` . We often check the status as we write to our project.
 
 ## Stage files
 
-After you track the files you have edited, you have to stage it - add the file to the VSC permanently, ready to be sent (pushed) to the remote server.
+After we track the files we have edited, we have to stage it - add the file to the VSC permanently, ready to be sent (pushed) to the remote server.
 
-do `git commit -m "message"` , where `-m` flag means message and `message` is a text that describes what changes you made to the project or file.
+do `git commit -m "message"` , where `-m` flag means message and `message` is a text that describes what changes we made to the project or file.
 
-do `git commit ` - to open your default editor to give a more decriptive message of what really went down. Save the content and close the file to successfully stage it.
+do `git commit ` - to open our default editor to give a more decriptive message of what really went down. Save the content and close the file to successfully stage it.
 
 ### Note
 
-* you can only stage (save) file you have tracked
-* make sure that the message
+* we can only stage ( save) files we have tracked
+* make sure that there is always a commit message
 
 ## Update the repository
 
@@ -94,15 +98,15 @@ do `git commit ` - to open your default editor to give a more decriptive message
 
 ## Check the commits
 
-do `git log` to see the commits you have made. Thus provides you with some information you may use to reset/revert the repo when there is an error.
+do `git log` to see the commits we have made. Thus provides we with some information we may use to reset/revert the repo when there is an error.
 
 ## Reset
 
-`git reset [commit]` where commit is the code you see when you make a commit. Use that code to reset the repository. It undoes all the commits but keeps the changes, `git reset --hard [commit]` does the same but discard the all histories upto the particular commit.
+`git reset [commit]` where commit is the code we see when we make a commit. Use that code to reset the repository. It undoes all the commits but keeps the changes, `git reset --hard [commit]` does the same but discard the all histories upto the particular commit.
 
 ## Branch
 
-A branch is similar to a versioning. You can diverge from main code, work on the new version/branch without having to mess with the main code.
+A branch is similar to a versioning. We can diverge from main code, work on the new version/branch without having to mess with the main code.
 
 ### Operations with branching
 
@@ -114,14 +118,14 @@ A branch is similar to a versioning. You can diverge from main code, work on the
 
 ## Practical
 
-* push all you softwares to github
+* push all we softwares to github
 * using git, create a todo app and push the final result to github
 
 ## Summary
 
 * read about git [here][git-site]
 * Every command in git, starts with `git` 
-* Table of commads you'd use more often
+* Table of commads we'd use more often
     - `git add file_name` 
     - `git add --all` or `git add .` 
     - `git commit -m "commit message"` 
@@ -139,6 +143,7 @@ A branch is similar to a versioning. You can diverge from main code, work on the
 * [w3school git][w3school-github-site]
 
 * Git tutorial from [git-scm][git-scm-site]
+
 #
 [git-site]:https://git-scm.com
 [github-site]:https://github.com
@@ -146,3 +151,4 @@ A branch is similar to a versioning. You can diverge from main code, work on the
 [brad-git-site]:https://www.youtube.com/watch?v=SWYqp7iY_Tc
 [w3school-github-site]:https://www.w3schools.com/whatis/whatis_github.asp
 [git-scm-site]:https://git-scm.com/docs/gittutorial
+

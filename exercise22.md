@@ -23,7 +23,7 @@ Unit testing is an important part of software engineering. We do unit testing to
 
 Consider that we have a program that does some mathematical operations - addition, multiplication and division. We shall use the `assertEqual` and `assertIsNone` method to test if our methods actually are returning the same value as we expect.
 
-``` python
+``` Python
 # mathsy.py
 class Mathsy:
     def __init__(self, operator, first_operand, second_operand):
@@ -54,7 +54,7 @@ class Mathsy:
             raise Execption(f"{self.operator} not known")
 ```
 
-``` python
+``` Python
 # test.py
 import unittest
 from mathsy import Mathsy
@@ -85,7 +85,7 @@ if __name__ == "__main__":
 
 ## Practicals
 
-Write a unit test - TestCases - for the programs you have written since `exercise 12` .
+Write a unit test - TestCases - for the programs written since `exercise 12` .
 
 ## Summary
 
