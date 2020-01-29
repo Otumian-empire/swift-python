@@ -3,11 +3,13 @@ SQL = Structured Query Language.
 
 This, we may say, is the language we shall use to talk to the database. Read more on about databases [here][wiki-what-is-a-bd-site].
 
-All we are soo interested in is CRUD. We want to learn how to create (insert), read, update and delete data. To continue any further, Download the [SQLite Browser][sqlitebrowser-site].
+All we are interested in is `CRUD` . We want to learn how to create ( insert), read ( select), update and delete data. To continue any further, Download the [SQLite Browser][sqlitebrowser-site]. It makes the work here easier.
 
 ## Create a sample table
 
-Cooy and paste this SQL code into windows when you click on the `Execute SQL` tab.
+Lets create a database, `sample.db` , and save it into a folder of any choice, but we recommend the folder in which we have done the practicals in.
+
+Copy and paste this SQL code into windows ( text area) when we click on the `Execute SQL` tab.
 
 ``` sql
 CREATE TABLE `test_tb` (
@@ -15,8 +17,6 @@ CREATE TABLE `test_tb` (
 	 `name` TEXT
 );
 ```
-
-or after you create the database and you have given it a name, save it into a folder of your choice.
 
 ## The code above
 
@@ -26,7 +26,7 @@ or after you create the database and you have given it a name, save it into a fo
     - `INTEGER` - type of data to store
     - `NOT NULL` - the column value must not be empty or null
     - `PRIMARY KEY` - makes every row unique
-    - `AUTOINCREMENT` - increase the `PRIMARY KEY` sequentially. Thus you ignore the values for the `id` field because it is `PRIMARY KEY` and `AUTOINCREMENT` 
+    - `AUTOINCREMENT` - increase the `PRIMARY KEY` sequentially. Thus we ignore the values for the `id` field because it is `PRIMARY KEY` and `AUTOINCREMENT` 
 * The `name` field has only one property, ie.the data type is a `TEXT` 
 
 We shall use this table in this discussion.
@@ -118,11 +118,15 @@ DELETE FROM `test_tb` WHERE `name` = 'kirito'
 
 ### Delete all data
 
-Be careful when you do this.
+Be careful when we do this.
 
 ``` sql
 DELETE FROM `test_tb
 ```
+
+## Note
+
+SQL is case insensitive
 
 ## Practical
 
