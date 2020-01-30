@@ -1,7 +1,7 @@
-# Exercise 24 (SQL)
+# Exercise 24 ( SQL)
 SQL = Structured Query Language.
 
-This, we may say, is the language we shall use to talk to the database. Read more on about databases [here][wiki-what-is-a-bd-site].
+This, we may say, is the language we shall use to talk to the database. Read more on about databases [here][wiki-what-is-a-bd-site] and also learn SQL from [Sololearn][sololearn-site].
 
 All we are interested in is `CRUD` . We want to learn how to create ( insert), read ( select), update and delete data. To continue any further, Download the [SQLite Browser][sqlitebrowser-site]. It makes the work here easier.
 
@@ -11,7 +11,7 @@ Lets create a database, `sample.db` , and save it into a folder of any choice, b
 
 Copy and paste this SQL code into windows ( text area) when we click on the `Execute SQL` tab.
 
-``` sql
+``` SQL
 CREATE TABLE `test_tb` (
 	 `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
 	 `name` TEXT
@@ -36,7 +36,7 @@ We shall use this table in this discussion.
 ### Add a row
 We may add data ( a row) to the table by inserting.
 
-``` sql
+``` SQL
 INSERT INTO `test_tb` ( `name` ) VALUES('John Doe')
 ```
 
@@ -98,7 +98,7 @@ SELECT * FROM `test_tb` WHERE `id` > 3
 
 Let us update a row, with `id` = 1 and change the `name` value to `Terry` 
 
-``` sql
+``` SQL
 UPDATE `test_tb` SET `name` = 'Terry' WHERE `id` = 1
 ```
 
@@ -106,13 +106,13 @@ UPDATE `test_tb` SET `name` = 'Terry' WHERE `id` = 1
 
 Delete the row with `id` = 1
 
-``` sql
+``` SQL
 DELETE FROM `test_tb` WHERE `id` = 1
 ```
 
 Delete the row with `name` = 'kirito'
 
-``` sql
+``` SQL
 DELETE FROM `test_tb` WHERE `name` = 'kirito'
 ```
 
@@ -120,7 +120,7 @@ DELETE FROM `test_tb` WHERE `name` = 'kirito'
 
 Be careful when we do this.
 
-``` sql
+``` SQL
 DELETE FROM `test_tb
 ```
 
@@ -148,7 +148,8 @@ use the DB Browser to create some tables and experiment with it
 #
 [wiki-what-is-a-bd-site]:https://en.wikipedia.org/wiki/Database
 [sqlitebrowser-site]:https://sqlitebrowser.org/dl/
-[w3schools-site]:https://www.w3schools.com/sql/
+[w3schools-site]:https://www.w3schools.com/SQL/
 [corey-schafer-utube-site]:https://www.youtube.com/watch?v=pd-0G0MigUA
 [sqlite-database-tut-site]:https://www.youtube.com/watch?v=zLQ03DeH04c&list=PL-1QdJ8od_eyxntzYQhwCkcVZlqWVrmSf
+[sololearn-site]:https://www.sololearn.com/Course/SQL/
 

@@ -1,26 +1,26 @@
 # Exercise 25 (Python SQLite)
 
-In the previous exercise we discussed SQL and used it to write and read the database. In this exercise we shall make use of a built-in database know as `sqlite3` . Read more about [sqlite3][sqlite3-python-site].
+In the previous exercise. `Exercise 24 ( SQL)` we discussed SQL and used it to write to and read from the database. In this exercise we shall make use of a built-in database know as `sqlite3` . Read more about [sqlite3][sqlite3-python-site].
 
-## Create database and table with 
+## Create database and table with
 
-We do believe you installed the [SQLite Browser][sqlitebrowser-site]. Go ahead and create a database, `sample.db` and save it into a folder of your choice, we shall use, `Sample` as the folder name.
+We do believe [SQLite Browser][sqlitebrowser-site] has been installed. We shall create a database, `sample.db` and save it into a folder, we shall use, `Sample` as the folder name.
 
 Create create table using this script.
 
 ``` SQL
 CREATE TABLE `profile` (
-	 `id` 	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-	 `name` 	TEXT,
-	 `job` 	TEXT,
-	 `skill` 	TEXT,
-	 `salary` 	INTEGER
+	 `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	 `name` TEXT,
+	 `job` TEXT,
+	 `skill` TEXT,
+	 `salary` INTEGER
 );
 ```
 
 ## Connect to database
 
-Before we use the `sqlite3` database, we must first import it, then connect to it.
+Before we use the `sqlite3` database, we must first `import` it, then connect to it.
 
 ``` Python
 import sqlite3
@@ -33,7 +33,7 @@ connection = sqlite3.connect(DATABASE_NAME)
 
 ## Cursor Object
 
-After we create the a connection to the database, we then make use of its cursor object to read and write to the database.
+After we create the connection to the database, we then make use of its cursor object to read and write to the database.
 
 ``` Python
 # cursor object
@@ -42,11 +42,11 @@ cursor = connection.cursor()
 
 ## Execute
 
-We pass the SQL query and some parameters to the `execute` method after we have created the `cursor` object.
+We pass an SQL query and some parameters to the `execute` method after we have created the `cursor` object.
 
 ### SQL query
 
-For the SQl query, it is recommended to use pkaceholders instead of passing the actual values directly.
+For the SQl query, it is recommended to use placeholders instead of passing the actual values directly into the qeury.
 
 ``` Python
 # consider some arbituary query
@@ -60,7 +60,7 @@ sql_query = "SELECT * some_tb WHERE `some_field` = ?"
 # the `?` is a placeholder
 ```
 
-### Fectch
+### Execute method
 
 ``` Python
 # profile -> id:int, name:str, job:str, skill:str, salary:int
@@ -77,7 +77,7 @@ salary = 3000
 sql_query = "INSERT INTO `profile` ( `name` , `job` , `skill` , `salary` ) VALUES(?, ?, ?, ?)"
 
 # the second argument is of the form, *parameters - remember `*arg` 
-# there would be a change in the database thus get the number of affected rows
+# there would be a change in the database, thus get the number of affected rows
 # with `rowcount` attribute
 num_affected_row = cursor.execute(sql_query, name, job, skill, salary).rowcount
 
@@ -181,7 +181,7 @@ if rows > 0:
 else:
     print("profile writing to database unsuccessful")
 
-# there is no need to commit here as no changes are made to the database
+# there is no need to commit here because no changes are made to the database
 
 # close cursor and connection
 cursor.close()
@@ -194,6 +194,8 @@ connection.close()
 
 * Write a script that returns the number of characters in the entire file, and the number of characters on each line. Save these two into a database with the name of the file.
 * Write a script that returns the document statistics of a give file. The document statistics are number of lines, number of words number of characters with space and witout space.
+
+    
 
     ``` 
     file name
