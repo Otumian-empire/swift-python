@@ -36,5 +36,3 @@
 1. exercise 25 (Python SQLite3)
 1. final project
 
-[swift python](https://github.com/otumian-empire/switf-python)
-

@@ -77,7 +77,7 @@ Get assistance reading this book from [Swift Python][swift-Python-site] GitHub p
 
 ## Feed back
 
-We have worked diligently through this book and a typo or misinterpretation of a concept may be lurking somewhere. Thus readers may send us a feed back through [our email][our-email] or comment on it on [Swift Python][swift-Python-site] GitHub page. Readers may also send a pull request.
+We have worked diligently through this book and a typo or misinterpretation of a concept may be lurking somewhere. Thus readers may send us a feed back through [our email][our-email] or comment on it on [Swift Python][swift-Python-site] GitHub page. Readers may also send a pull request too. Therefore we are opened to suggestions on improved in any form.
 
 #
 [Python-site]:https://www.Python.org/downloads/
