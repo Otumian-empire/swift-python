@@ -22,7 +22,7 @@ This is a simple exercise that follows after the reader has gone through the pro
 
 This is basically bulleting what we thought or think is really needed to carry way after reading the prose as such encouraged to remember.
 
-# Format for header text
+## Format for header text
 
 Let all header text be Capitalized - that is , uppercase first character
 

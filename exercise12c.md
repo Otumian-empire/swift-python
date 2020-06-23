@@ -32,6 +32,7 @@ def many_args(*s):
 many_args('sandy', 'jude', 'mani', 'desmond', 'peter', 'sandy', 'jude', 'mani', 'desmond', 'peter', 'sandy', 'jude', 'mani', 'desmond', 'peter')
 
 ```
+In the above code, we used `*s` to denote a tuple (collection) of arguments. 
 
 ### Note
 

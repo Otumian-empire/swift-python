@@ -1,7 +1,7 @@
 # Exercise 14 ( List)
-We have had our fill with lists but here we kind of go much into it.
+We have had our fill with lists but here we would kind of go much into it.
 
-As already know, a `list` is a collection of comma seperated objects, where by the collection is delimitered by an opened and closed square bracket.
+As already we know, a `list` is a collection of comma seperated objects, where by the collection is delimitered by an opened and closed square bracket.
 
 ## Examples
 
@@ -93,9 +93,9 @@ my_list = [
     ['go', 'py', 'js', 'kt']
 ]
 
-# `4` is in row `1` column `4` .
-# knowing well that index starts from `0` , we substract `1` from the rows and cols
-# thus `4` can be indexed with `[1-1][4-1]=[0][3]` 
+# 4 is in row 1 column 4 .
+# knowing well that index starts from 0 , we substract 1 from the rows and cols
+# thus 4 can be indexed with [1-1][4-1]=[0][3]
 ```
 
 ## List slicing

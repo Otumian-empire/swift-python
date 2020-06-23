@@ -1,5 +1,5 @@
 # Exercise 0 ( Set up)
-Some believed programming was meant for some particular individuals with some particular skills, which before felt almost true, due the complexity of the tokens used to instruct the computer at the time. Guido van Rossum and the community, made it possible and simpler, through Brian Kernighan and Dennis Ritchie, for anyone with the least interest in learning how to instruct a computer to perform some basic task, the opportunity to do so. It is our dream that many would also learn how to code by introducing them to Python from ground zero.
+Some believed programming was meant for some particular individuals with some particular skills, which before felt almost true, due the complexity of the tokens used to instruct the computer at the time. Guido van Rossum and the community, made it possible and simpler, through Brian Kernighan and Dennis Ritchie, for anyone with the least interest in learning how to instruct a computer to perform some basic task, the opportunity to do so. It is our dream that many would also learn how to code by introducing them to programming in Python from ground zero.
 
 ## Aim
 
@@ -7,7 +7,7 @@ After reading this book and doing almost all the exercises and projects, the rea
 
 ## Who is the book meant for
 
-This book is suited for individuals from any work of like, novice to expert, first timers - noobs to veterans. We trust anyone who gets hold of this book could speak, read and understand English - can hold a conversation in English language as this book is written in English.
+This book is suited for individuals from any work of line, novice to expert, first timers - noobs to veterans. We trust anyone who gets hold of this book could speak, read and understand English - can hold a conversation in English language as this book is written in English.
 
 ## Prerequisite
 
@@ -15,7 +15,7 @@ We expect the reader to be patient, determined, committed, genuine and not neces
 
 ## Set up environment
 
-The code presented in this book would run on any major operating system. The reader may need, a development environment which we shall use to write and test the codes.
+The code presented in this book would run on any major operating system. The reader may need, a development environment which we shall use to write and test the code.
 
 There are basically three ways to set up and either is okay as far as the reader is confident in the environment chosen. We assume the user is using a PC.
 
@@ -28,8 +28,8 @@ Install Python from the [Python website][Python-site]. Windows user may make ref
 Unix and Linux user may have Python already installed on their PC. To test whether you have Python installed, open the terminal (command-line) and type, `python` then press enter. For the Linux users, also do for `python3` since we are interested in the features of `python3` . Something like, 
 
 ``` 
-Python 3.6.9 (default, Nov  7 2019, 10:44:02) 
-[GCC 8.3.0] on Linux
+Python 3.8.2 (default, Apr 27 2020, 15:53:34) 
+[GCC 9.3.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> |
 ```
@@ -52,11 +52,11 @@ At this option, the user has terminal (command-line, shell, ... ) and a text edi
 
 ## Note
 
-It is a little bit hard to navigate through the directories as a noob and if user insists on using the command-line and text editor, we recommend the watch this [video][windwos-cmd-site] for windows user and [video][unix-linux-cmd-site]. There is more also [here][advanced-cmd]. Though Pycharm is OK.
+It is a little bit hard to navigate through the directories as a noob and if user insists on using the command-line and text editor, we recommend the watch this [video][windwos-cmd-site] for windows user and [video][unix-linux-cmd-site]. There is more also [here][advanced-cmd]. You can also reference our [commandline][CLI-presentation] presentation, using powershell as administrator on windows
 
 ### Structure of the book
 
-This book user exercise instead of chapter. It is majorly divided into five parts.
+This book uses exercise instead of chapter, which should be the same. It is majorly divided into five parts.
 
 1. Exercise 1 to 8 covers the fundamentals.
 1. Exercise 9 to 13 covers some operators, loops and functions.
@@ -73,11 +73,11 @@ We recommend the reader reads through each exercise based on the major divisions
 
 ## How to get assistance reading this book
 
-Get assistance reading this book from [Swift Python][swift-Python-site] GitHub page or send us an email at [our email][our-email]. There are other programming platforms on telegram, Facebook or even copy and pasting the error into google or just googling the problem, checking stackoverflow and other coding platforms.
+Get assistance reading this book from [Swift Python][swift-Python-site] GitHub page or send us an email at [our email][our-email], with the subject as swift-python. There are other programming platforms on telegram, Facebook or even copy and pasting the error into google or just googling the problem, checking stackoverflow and other coding platforms.
 
 ## Feed back
 
-We have worked diligently through this book and a typo or misinterpretation of a concept may be lurking somewhere. Thus readers may send us a feed back through [our email][our-email] or comment on it on [Swift Python][swift-Python-site] GitHub page. Readers may also send a pull request too. Therefore we are opened to suggestions on improved in any form.
+We have worked diligently through this book and a typo or misinterpretation of a concept may be lurking somewhere. Thus readers may send us a feed back through [our email][our-email] or comment on it on [Swift Python][swift-Python-site] GitHub page, open an issue. Readers may also send a pull request too. Therefore we are opened to suggestions on improvement in any form.
 
 #
 [Python-site]:https://www.Python.org/downloads/
@@ -89,4 +89,4 @@ We have worked diligently through this book and a typo or misinterpretation of a
 [advanced-cmd]:https://www.youtube.com/playlist?list=PL6gx4Cwl9DGCkg2uj3PxUWhMDuTw3VKjM
 [swift-Python-site]:https://github.com/otumian-empire/switf-Python
 [our-email]:popecan1000@gmail.com
-
+[CLI-presentation]:https://github.com/Otumian-empire/CLI-presentation

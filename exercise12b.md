@@ -14,7 +14,7 @@ We can make it better by passing some values to the function.
 
 ## A function with argument
 
-An argument is basically a value ( some times a reference of the value) we pass to a function so that the function may make use it to reach an end.
+An argument is basically a value ( some times a reference of the value) we pass to a function so that the function may make use it to reach an end. Think of an argument as data that you feed into the function for some computation.
 
 ``` Python
 def get_and_print_name(name, some_str):
@@ -23,7 +23,7 @@ def get_and_print_name(name, some_str):
 get_and_print_name('John Doe', "$_$")
 ```
 
-A better version of the `calc_area` code from `Excercise 12 a (Functions)` would be that we are able to pass argument to it just as we did above. It will be better when we can dictate what the base or height can be. With this we can modify the functionality of the function to return a particular area based on the arguments passed.
+A better version of the `calc_area` code from `Excercise 12 a (Functions)` would be that we are able to pass argument ( data) to it just as we did above. It will be better when we can dictate what the base or height can be. With this we can modify the functionality of the function to return a particular area based on the arguments ( data) passed.
 
 #### Example
 
@@ -57,10 +57,13 @@ calc_area(3, 4)
 # base and height in def calc_area(base, height) are paramters
 # 3 and 4 are arguments, also we can assign 3 and 4 to a variable and pass the variables as argument instead.
 ```
+## Parameter and argument
+
+When we create a function, the placeholders for the data that the function may need is what we call the parameter. If we look at the code above, the parameters are `base` and `height` - meaning, the function would needs two data to compute upon. Now, when we want to make use of the function, call the function, we pass the required data as argument.
 
 ## Function that returns a value
 
-Sometimes, one may want a value from a function to make use of it in one way or another. To achieve this we return the value rather printing it out in the function.
+Sometimes, one may want a value from a function to make use of it in one way or another. To achieve this we return the value rather than printing it out in the function.
 
 ``` Python
 # this function returns the area of a triangle, taking the base and height as arguments
@@ -72,7 +75,8 @@ def calc_area(base, height):
 user_base   = float(input("Enter base: "))
 user_height = float(input("Enter height: "))
 
-# call the function here
+# call the function here, and pass user_base and user_height to it
+# as the base and height needed
 area = calc_area(user_base, user_height)
 
 print(f"The area of a triagle of base, {user_base} and height, {user_height} is {area}")

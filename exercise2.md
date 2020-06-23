@@ -1,9 +1,9 @@
 # Exercise 2 ( Data types)
-A data type is basically, the kind of value ( data) a variable can hold or store. Think of them as the kind of data we use in our program. More technically, a data type dictates the size of memory to be allocatted for a value.
+A data type is basically, the kind of value ( data) a variable can hold or store. Think of them as the kind of data we use in our program. More technically, a data type dictates the size of memory to be allocated for a value.
 
 There are basically two types of data which are written in different forms. We have Numbers and Text (broadly speaking). Have a brief read on [C's data type][Cdata-type-size-site] - by the way, Python was implemented in [C][C-site].
 
-For the numbers we have `integer` also know as `int` and we have `float` which is also know as a `float` . Floats are basically decimal numbers - reals. For the Text we have `string` also known as `str` . A string is a collection of zero or at least a character, enclosed in single or double quote.
+For the numbers we have `integer` also know as `int` and we have `float` which is also know as a `float` . Floats are basically decimal numbers - reals. For the Text we have `string` also known as `str` . A string is a collection of zero or more characters, enclosed in single or double quote.
 
 ## Examples
 
@@ -79,4 +79,5 @@ Consider these whenever we want to create a variable.
 [C-site]:https://en.wikipedia.org/wiki/C_(programming_language)
 [PEP-8-site]:https://www.python.org/dev/peps/pep-0008/
 [keyword-list-site]:https://github.com/python/cpython/blob/3.8/Lib/keyword.py
+[md2pdf][https://www.markdowntopdf.com/]
 
