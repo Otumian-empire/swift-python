@@ -10,17 +10,18 @@ The content in here is very simple to follow, all you need is the latest or stab
 
 You basically read the content, take notes and try the exercises for your own good.
 
-# To contribute
+## TO compile to pdf
+Visit [markdowntopdf][markdowntopdf], and select the exercise you want to turn to pdf.
+
+## To contribute
 * write a content
 * edit or update a content
 * fix typos
-* suggest updates or improvement
-* create more practical examples
-* add a documentation
+* suggest pdfcumentation
 * read the content and provide feedback
-* you may compile a pdf version of all the files
+* translate the content
 
-# To implement a project
+## To implement a project
 One should break the project into basically four phases, i.e:
 * Analysis phase
 * Design phase
@@ -34,3 +35,6 @@ One should break the project into basically four phases, i.e:
 > You can choose to add all phases in one file
 
 __Know that the file extension should be `.md`__
+
+#
+[markdowntopdf]:https://www.markdowntopdf.com/
