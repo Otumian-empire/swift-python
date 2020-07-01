@@ -93,7 +93,7 @@ my_list = [
     ['go', 'py', 'js', 'kt']
 ]
 
-# 4 is in row 1 column 4 .
+# we know that `4`, is in row 1 column 4 .
 # knowing well that index starts from 0 , we substract 1 from the rows and cols
 # thus 4 can be indexed with [1-1][4-1]=[0][3]
 ```
@@ -107,10 +107,14 @@ Just like indexing, but here we provide a range, a `start` and an `end` with a c
 ``` Python
 my_list = [1, 'gnu', 'swift', 'kickass']
 
-print(my_list[1:3]) # [gnu, swift]
-print(my_list[0:3]) # [1, gnu, swift]
-print(my_list[:3]) # [1, gnu, swift]
-print(my_list[1:]) # [gnu, swift, kickass]
+print(my_list[1:3])  # [gnu, swift]
+print(my_list[0:3])  # [1, gnu, swift]
+
+# since `start` is not given, it starts from the first element to `end`
+print(my_list[ :3])  # [1, gnu, swift]
+
+# since `end` is not given, it starts from 1 to the last element in the list
+print(my_list[1: ])  # [gnu, swift, kickass]
 ```
 
 ## List Operations
@@ -129,13 +133,18 @@ print(f_list)
 
 ``` 
 
-The multiplication operator, `*` on a list object multiplies the list `n` time, for some integer value `n` > 1.
+The multiplication operator, `*` on a list object multiplies the list elements `n` time, for some integer value `n` > 1.
 
 ```Python
 b_list = [2]
 f_list = b_list * 4
 
-print(f_list)
+print(f_list)  # [2, 2, 2, 2]
+
+a_list = [1, "one"]
+e_list = a_list * 4
+
+print(e_list)  # [1, 'one', 1, 'one', 1, 'one', 1, 'one']
 ```
 
 The `in` operator, checks if an object exists in a list ( or an iterable object).
@@ -222,7 +231,7 @@ del name_list[1]
 
 > this is supposed to be fun
 
-* Create a function for each of the following, using any means possible without cutting corners.( no using of built-in function - we have go to try harder)
+* Create a function for each of the following, using any means possible without cutting corners.( no using of built-in function - we have to try our best)
     1. `addition` - this function takes two objects as argument,  and returns their sum if they are numbers, that is a float or an int.
     1. `subtraction` - this function takes two objects as argument, returns the resut of subtracting the second from the first.
     1. `division` - this function takes two objects as argument, returns the result from dividing the first by the second. Remember that zero division is not allowed thus check if the second is zero.
@@ -230,36 +239,32 @@ del name_list[1]
 
 * Write a function, that takes a list of various objects as an argument, return a list of all the objects that are numbers ( that is integer and float).
 
-* Write a function taking a list of various objects as argument, return the number of each object in the list.
+* Write a function taking a list of various objects as argument, return the number of each object in the list. (This is also known as the frequency counter)
 
-* Write a function that takes a list of integers as an argument, remove ( delete) any element that has the same parity as its `index + 1` .( If the `index + 1` is even and the element is even, remove the element. If number is odd and `index + 1` is odd, remove element, except when the `index` is 0), looping `n -1` times, where `n` is the size of the list.
+* Write a function that takes a list of integers as an argument, remove ( delete) any element that has the same parity as its `index + 1` .( If the `index + 1` is even and the element is even, remove the element. If element is odd and `index + 1` is odd, remove element, except when the `index` is 0), looping `n - 1` times, where `n` is the size of the list.
 
-``` Python
-s = [2, 6, 18, 11, 4]
-# 6 is removed - loop 1
+    ``` Python
+    s = [2, 6, 18, 11, 4]
+    # 6 is removed - loop 1
+    # index of 6, + 1 = 2
 
-s = [2, 18, 11, 4]
-# 18 is removed - loop 2
+    s = [2, 18, 11, 4]
+    # 18 is removed - loop 2
+    # index of 18, + 1 = 2
 
-s = [2, 11, 4]
-# None is removed - loop 3
+    s = [2, 11, 4]
+    # 11 is not removed - loop 3
+    # index of 11, + 1 = 2
 
-s = [2, 11, 4]
-# None is removed - loop 4
+    s = [2, 11, 4]
+    # 4 is not removed - loop 4
+    # index of 4, + 1 = 3
 
-s = [2, 11]
-```
+    # final output
+    s = [2, 11, 4]
+    ```
 
-* This practical is the same as the above but in the above as we remove the elements which passes the condition, the list is changed too. We don't want to remove the element as the list chnages - that in a way does really suffices. Consider the code below:
-
-``` Python
-# i = index + 1
-s = [2, 6, 18, 11, 4]
-i = [1, 2,  3,  4, 5]
-
-# only 6 will be removed because it is in parity with its index + 1
-s = [2, 18, 11, 4]
-```
+* Write a function that takes a list of integers as input, then return a list with the same parity as the first element.
 
 ## Summary
 

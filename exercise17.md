@@ -178,7 +178,7 @@ for key, value in profile.items():
 
 ## Practicals
 
-* Write a program that creates a dynamic user profile. Make use of the `input()` 
+* Write a program that creates a dynamic user profile. Make use of the `input()`. Make use of setdefault.
 * Write a function that removes items with duplicate values
 * Write a function that reverses a dictionary
 * Write a function that sorts a dictionary by Key then value ( 2 functions)

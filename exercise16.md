@@ -113,7 +113,7 @@ Implement your own version of
     - symmetric_difference
     - delete like discard or remove ( ignore the KeyError thing)
     - update
-    - isset - it check is a sequence has no duplicate ( remember `count` )
+    - isset - it checks if a sequence has no duplicate ( remember `count` )
 
 > make use of all the we've learnt.
 

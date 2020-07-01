@@ -1,5 +1,5 @@
 # Exercise 15 (Tuple)
-A tuple is a comma seperated values and by conversion delimited by an open and closed brackets - parentheses, `()` . A tuple is just like a `list` but a tuple is immutable - can not be altered after creation unlike a list.
+A tuple is a comma seperated objects and by conversion delimited by an open and closed brackets - parentheses, `()` . A tuple is just like a `list` but a tuple is immutable - can not be altered after creation unlike a list.
 
 ## Structure of a Tuple
 
@@ -34,7 +34,7 @@ print(type(single_element_tuple))
 # but this is not a tuple
 not_single_element_tuple = 1
 
-# or 
+# nor is this
 not_single_element_tuple = (1)
 print(type(not_single_element_tuple))
 ```
@@ -76,13 +76,14 @@ sample_tup.extend((2,3))
 # but we can contatenate with +=
 sample_tup += 2, 3
 print(sample_tup)  # (1, 2, 3)
+
 # What happended was that we concatenated 1, and 2, 3 and 
-# assigned it to sample_tup
+# assigned it to sample_tup, we basically created a new tuple
 ```
 
 ## Casting
 
-we may cast - convert any iterable - a sequential object such as a `list` and `string` to a tuple but not an integer because we can not loop over an integer. This can be done using `tuple(sequence)` .
+we may cast - convert any iterable - a sequential object such as a `list` and `string` to a tuple but not a number because we can not loop over numbers. This can be done using `tuple(sequence)` .
 
 ``` Python
 # casting a list to a tuple
@@ -97,12 +98,12 @@ print(tuple_str)
 
 ## Practicals
 
-Try to implement the practicals in `Exercise 14 ( List)` .
+Try to implement the practicals in `Exercise 14 ( List)` using tuple.
 
 ## Summary
 
-* A tuple is an immutable list, delimetered by parentheses
+* A `tuple` is an immutable list, delimetered by parentheses
 * Sample tuple, `my_tuple = (1, 2, 3)` 
-* Tuple doe not have the `append` and `extend` method
-* Make a sequence a tuple by casting it. `tuple('I am a string')` 
+* `tuple` does not have the `append` and `extend` method
+* Make a sequence a `tuple` by casting it. `tuple('I am a string')` 
 
