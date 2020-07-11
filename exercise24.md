@@ -50,8 +50,6 @@ INSERT INTO `test_tb` ( `name` ) VALUES ('Swift Python'), ('kirito'), ('kevin'),
 
 Reading is done by selecting.
 
-    
-
 ### Read all rows and columns
 
 This will read all the data and with all the field displaying.

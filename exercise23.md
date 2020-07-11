@@ -11,8 +11,8 @@ We shall install Git using [this website][git-site], depending on the OS. Afterw
 
 Open the commandline - power shell for windows.
 
-* Set user name: `git config --global user.name your_user_name` 
-* Set user email: `git --global user.email your_user_email` 
+* Set user name:  `git config --global user.name your_user_name` 
+* Set user email: `git config --global user.email your_user_email` 
 
 This actually can be changed for every software we want to create using git, else this configuration is default.
 

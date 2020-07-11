@@ -48,7 +48,7 @@ area.calc_area()
 
 ## Import objects from a module
 
-Lets assume that there is at least a function in the module and we want to make use of a particular one or all, using the `from module` annotation.
+Lets assume that there is at least a function in the module and we want to make use of a particular one or all, using the `from module import this_functionality ...` annotation.
 
 Add a function that calculates the perimeter of the triangle, `calc_peri` , to the `area.py` script and rename the module to `triangle.py` .
 
@@ -65,6 +65,7 @@ from triangle import calc_area, calc_peri
 
 # call the calculate area function
 calc_area()
+# with this, we won't have to do, area.calc_area()
 
 # call the calculate perimeter function
 calc_peri()
@@ -277,4 +278,3 @@ perimeter()
 
 #
 [python-site]:https://www.Python.org
-

@@ -3,7 +3,7 @@ An exception is an error generated when the code is executed. Sometimes, this is
 
 ## Some types of exceptions
 
-There are a lot of Exceptions and We'd just list some of the mostly seen ones.
+There are a lot of Exceptions and we'd just list some of the mostly seen ones.
 
 * ZeroDivisionError
 * AttributeError
@@ -18,7 +18,7 @@ There are a lot of Exceptions and We'd just list some of the mostly seen ones.
 
 ## Handling exceptions
 
-It is import to handle exception in our code as it will prevent the abrupt halting of the software. We can handle these errors with a `try` and `except` clauses.
+It is important to handle exception in our code as it will prevent the abrupt halting of the software. We can handle these errors with a `try` and `except` clauses.
 
 ### Try and catch structure
 
@@ -35,7 +35,7 @@ except (exceptions to handle):
 # catch ZeroDivisionError
 # error generated when dividing by zero
 # we shall perform some simple division
-#  where by we take 2 int inputs from the user
+# where by we take 2 int inputs from the user
 try:
     numerator = int(input('Enter the numerator: '))
     denominator = int(input('Enter the denominator: '))
@@ -58,6 +58,8 @@ else:
     result = numerator / denominator
     print(f"The result is {result}")
 ```
+
+In the above example, it will be best if try and except is used instead.
 
 ### Example 2
 

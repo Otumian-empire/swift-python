@@ -13,7 +13,7 @@ There are some concepts that runs through OOP in all OO languages:
 * Abstraction  
 * Encapsulation
 
-> OOP in Python is basically creation of classes and inheritance.
+> We shall only consider basically the creation of classes, inheritance and polymorphism.
 
 ### Note
 
@@ -84,7 +84,7 @@ granny.bark()
 
 > Remember to pass in `self` and reference methods and attributes with `self` 
 
-## Example with multiple inheritance
+### Example with multiple inheritance
 
 ``` Python
 # there are three class
@@ -107,7 +107,7 @@ class Hybrid(Human, Robot):
         print("I am a Hybrid")
 ```
 
-## `super()` function
+### `super()` function
 
 Use the `super()` to access the original methods in the base class.
 
@@ -152,5 +152,30 @@ tiger = Tiger("green", 5, True)
 tiger.run()
 ```
 
+## Polymorphism
+
+The idea of polymorphism is to have many forms. Lets consider an example.
+
+``` Python
+# parent class
+class Human:
+    def __init__(self, name):
+        self.name = name
+
+    def say_hello(self):
+        return f"Hello, {self.name}"
+```
+
+So say a class extends the Human class, there are a lot of ways to say hello, and thus one would like to have a different implementation for different humans.
+
+``` Python
+# this extends Human
+class Engineer(Human):
+
+    # say hello the engineers way, so we override the say_hello method
+    def say_hello(self):
+        return f"Hello, {self.name}, I am an Engineer!!"
+
+```
 > continuation in exercise 20 c
 

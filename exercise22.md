@@ -83,6 +83,7 @@ if __name__ == "__main__":
     unittest.main()
 ```
 
+Check [this][test] out about testing.
 ## Practicals
 
 Write a unit test - TestCases - for the programs written since `exercise 12` .
@@ -95,3 +96,5 @@ Write a unit test - TestCases - for the programs written since `exercise 12` .
 * create a class, `ModuleTest` and subclass `unittest.TestCase` 
 * add `if __name__ == "__main__": unittest.main()` to actually run the test when called.
 
+#
+[test]:https://github.com/Otumian-empire/sicp-python

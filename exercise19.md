@@ -41,7 +41,7 @@ After creating the file, a file object is returned.
 file_obj = open('helloworld.py', 'w+')
 ```
 
-### Alternative to open file
+### Alternative to open/create a file
 
 Use the `with ... as` clause to `open` and `close` the file. This is mostly peferred.
 
@@ -111,21 +111,24 @@ with open('sample.py', 'r') as file_obj:
 # line by line as a list object
 
 # lets make this more fun
-# prompt the user for the number of lines there is in the file
 # prompt the user which line should be read
-# then print the line
+# then print that line
 
 file_content = []
 
-with open('sample.py', 'r') as file_object:
-    file_content = file_object.readlines()
+try:
+    with open('s.html', 'r') as file_object:
+        file_content = file_object.readlines()
 
-user_input = int(input("Enter line number: "))
+    user_input = int(input("Enter line number: "))
 
-line = file_content[user_input - 1]
+    line = file_content[user_input - 1]
 
-print(user_input, line)
+    print(user_input, line)
+except Exception as e:
+    print(f'{e}')
 ```
+What will happen if the user enters a line number that does not exist?
 
 ## Write to file
 
@@ -174,7 +177,7 @@ with open('testsample.py', 'r') as read_obj:
 ## Practical
 
 * Write a function that returns the number of lines and characters on each line in the entire file.
-* Write a function that returns the document statistics of a give file. The document statistics are number of lines, number of words, number of characters with space and witout space.
+* Write a function that returns the document statistics of a give file. The document statistics are number of lines, number of words, number of characters with space and witout space. Lines are separated by newlines, words are separated by spaces.
 
     ```sample output
     file name

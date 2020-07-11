@@ -1,0 +1,8 @@
+code/
+practical/
+.vscode/
+__pycache__/
+practical
+swift-python.odt
+swift-python.pdf
+.~lock.swift-python.odt#
