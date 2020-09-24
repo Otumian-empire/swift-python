@@ -36,7 +36,7 @@ Assume we have two sets, A anf B.
 | Operator | Function      | description |
 | :------- | :------:      | ----------: |
 | `&` | intersection  | returns elements in both sets |
-| `|` | union         | returns elements in either set |
+| `\|` | union         | returns elements in either set |
 | `-` | difference    | returns elements in set A that are not in B |
 | `^` | symmetric_difference | returns elements that are not in both sets |
 | `>=` | issuperset    | returns True if A is a super set of B, else False |
