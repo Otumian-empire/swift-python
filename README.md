@@ -1,5 +1,5 @@
 # Swift-Python
-This is a swift presentation of the basics of programming, using the python programming language to the extent that we can take it.
+This is a swift presentation on the basics of programming, using the python programming language to the extent that we can take it.
 
 This is meant for anyone who is interested in learning python given a limitted period or an experienced developer who want to pick up the python programming. Also students who have taken introduction to computer science or programming would find this helpful in their own frame.
 
