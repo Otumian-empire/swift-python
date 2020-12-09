@@ -1,11 +1,12 @@
 # Exercise 5 c (Implementation of a solution)
-In this stage we write the code based on the design and then go further on to test and debug our code. We are going to change the design to a valid Python code.
 
-``` Python
+In this stage, we write the code based on the design and then go further on to test and debug our code. We are going to change the design to a valid Python code.
+
+```Python
 '''
 The inputs:
     totalNumberStudent: int = 5
-    listOfScore: list = 40, 78, 91, 59 and 12 
+    listOfScore: list = 40, 78, 91, 59 and 12
     overallScore: int = 100
 
 The processes:
@@ -24,7 +25,7 @@ The output:
 
 ## Code 1
 
-``` Python
+```Python
 # The inputs
 totalNumberStudent = 5
 
@@ -44,10 +45,10 @@ sumOfScores = s1 + s2 + s3 + s4 + s5
 # the average
 averageOfScores = sumOfScores / totalNumberStudent
 
-# the number of student who had a score greater than the average
+# the number of students who had a score greater than the average
 # initialize two variables, numberAboveAverage and numberBelowAverage to zero
 # compare each student score with the average
-# if the score is greater than the average, add one to numberAboveAverage else (it may mean it equal to or less than) do nothing here.
+# if the score is greater than the average, add one to numberAboveAverage else (it may mean is equal to or less than) do nothing here.
 
 numberAboveAverage = 0
 
@@ -92,12 +93,12 @@ print(numberBelowAverage, "scored below average")
 
 ## Code 2
 
-``` Python
+```Python
 # The inputs
 totalNumberStudent = 5
 
 # the scores of the five students
-# here we use a data structure know as a list
+# here we use a data structure known as a list
 # compare this to the other, s1, s2, s3, s4, s5
 # which is simpler
 listOfScore = [40, 78, 91, 59, 12]
@@ -114,10 +115,12 @@ for score in listOfScore:
 # the average
 averageOfScores = sumOfScores / totalNumberStudent
 
-# the number of student who had a score greater than the average
+# the number of students who had a score above than the average
 # initialize two variables, numberAboveAverage and numberBelowAverage to zero
 # compare each student score with the average
-# if the score is greater than the average, add one to numberAboveAverage else (it may mean it equal to or less than) so we check if it is less than else it will be equal, which is of no interest so do nothing.
+# if the score is greater than the average, add one to numberAboveAverage
+# else (it may mean is equal to or less than) so we check if it is less than
+# else it will be equal, which is of no interest to do nothing.
 # we will use a loop here also
 
 numberAboveAverage = 0
@@ -139,11 +142,10 @@ print(numberBelowAverage, "scored below average")
 
 ## Practicals
 
-Implement the design from the practicals in `exercise 5 b (Design of a solution)` 
+Implement the design from the practicals in `exercise 5 b (Design of a solution)`
 
 ## Summary
 
-* Implementation phase is where we code the design from the analysis
-* Implementaion is not the last phase of software developement
-* We have to test, maintain and document our programs to actually make them software
-
+- Implementation phase is where we code the design from the analysis
+- Implementation is not the last phase of software development
+- We have to test, maintain and document our programs to make the software
