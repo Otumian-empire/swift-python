@@ -1,9 +1,10 @@
 # Exercise 5 a (Analysis of a problem)
-In this exercise, we shall look into creation of a solution to a given problem. Let us assume a very basic problem to do with. We will analyse and design an algorithm for the solution.
+
+In this exercise, we shall look into the creation of a solution to a given problem. Let us assume a very basic problem to do with. We will analyse and design an algorithm for the solution.
 
 ## Sample problem
 
-``` Python 
+```Python
 '''
 In a test of five students, the marks, 40, 78, 91, 59 and 12 were obtained.
 If the test score was over 100. Find the:
@@ -18,7 +19,7 @@ If the test score was over 100. Find the:
 
 ## Analysis
 
-To analyse the sample problem above, there are basically three things we need to lookout for in the given problem. These are:
+To analyse the sample problem above, there are three things we need to look out for in the given problem. These are:
 
 1. the input
 1. the output
@@ -43,11 +44,11 @@ This is what the program is expected to do - the expected outcome, what the user
 
 ### Note
 
-Usually the desired output dictates how to compute on the input to obtain the output.
+Usually, the desired output dictates how to compute on the input to obtain the output.
 
 ### The process
 
-This is also known as the computation. From the problem, we are to compute the sum of the scores and the others. Our focus here is "the how" the computation is or will be done. Most often, there would be a straight forward formular to use, else we have to find it. So now, all we have to think about, is how to compute the :
+From the problem, we are to compute the sum of the scores and the others. Our focus here is to find how to achieve the output. Most often, there would be a straight forward formula to use, other than that we have to find it. So now, all we have to think about is how to compute the :
 
 1. sum of the scores
 2. average of the scores
@@ -58,5 +59,4 @@ This is also known as the computation. From the problem, we are to compute the s
 
 The result from the computation is what becomes our output though not all becomes the output.
 
-> continuation in `exercise 5 b (Design of a solution)` 
-
+> continuation in `exercise 5 b (Design of a solution)`
