@@ -50,7 +50,7 @@ else:
 ### Example
 
 ```Python
-# A simple program to check is a driver is driving 
+# A simple program to check is a driver is driving
 # above the speed limit
 
 MAX_SPEED = 120
@@ -144,7 +144,7 @@ else:
         print("Rock on man")
 
 # As We may see, we can have even more nested if and else and
-# elifs as much as we can provided they don't make the code 
+# elifs as much as we can provided they don't make the code
 # hard to read
 ```
 
@@ -159,12 +159,12 @@ Remeber relational and logical operators? We have made use of relational, what a
 ### Example
 
 ```Python
-# this code is the same as above but just serving some 
-# different concept. we know it is bad to park or reverse 
+# this code is the same as above but just serving some
+# different concept. we know it is bad to park or reverse
 # on the high way. kind of we can evaluate these two together,
-# the maximum speed limit and the overspeeding limit are all 
-# the same. we can either use a relational or a logical, either 
-# would do. for the relational, over speeding limit is greater 
+# the maximum speed limit and the overspeeding limit are all
+# the same. we can either use a relational or a logical, either
+# would do. for the relational, over speeding limit is greater
 # than the maximum speed thus we may check for maximum speed
 
 PARKED_SPEED = 0
@@ -193,7 +193,7 @@ MAX_SPEED  = 120
 OVER_SPEED = 200
 drivers_speed = 210
 
-# if We would like to catch OVER_SPEED, We check for OVER_SPEED 
+# if We would like to catch OVER_SPEED, We check for OVER_SPEED
 # first else it won't be catched
 if drivers_speed > OVER_SPEED:
     print("Over speed")
