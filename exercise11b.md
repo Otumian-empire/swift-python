@@ -113,13 +113,13 @@ while i < end:
 In this snippet, we will take a long space-separated `string` and print out the words and their corresponding number of characters.
 
 ```python
-# we are will not be using any function
+# we will not be using any function
 text = "looping through name without index"
 
 size = 0
 word = ""
 start = 0
-end = len(text)
+end = len(text)  # `len` to find the length of the string
 
 while start < end:
     ch = text[start]

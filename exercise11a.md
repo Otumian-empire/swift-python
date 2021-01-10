@@ -123,7 +123,7 @@ end = len(name)
 for i in range(end):
     print(name[i])
 
-# looping through name without index
+# looping through `name` without using index
 # this is looping through the structure itself
 for ch in name:
     print(ch)
@@ -175,7 +175,7 @@ Average: 4.8
 In this snippet, we will take a long space-separated `string` and print out the words and their corresponding number of characters.
 
 ```python
-# we are will not be using any function
+# we will not be using any function
 text = "looping through name without index"
 
 size = 0
