@@ -85,21 +85,21 @@ We recommend the reader reads through each exercise based on the major divisions
 
 ## How to get assistance reading this book
 
-Get assistance reading this book from [Swift Python][swift-python-site] GitHub page or send us an email at [our email][our-email], with the subject as `swift-python assistance`. There are other programming platforms on telegram, Facebook or even copy and paste the error into google or just googling the problem, checking StackOverflow. For beginners, find a coding buddy.
+Get assistance reading this book from [Swift Python][swift-python-site] GitHub page or send us an email at [our email](mailto:popecan1000@gmail.com), with the subject as `swift-python assistance`. There are other programming platforms on telegram, Facebook or even copy and paste the error into google or just googling the problem, checking StackOverflow. For beginners, find a coding buddy.
 
 ## Feedback
 
-We have worked diligently through this book. A typo or misinterpretation of a concept may be lurking somewhere. So readers may send us feedback through [our email][our-email] or comment on it on [Swift Python][swift-python-site] GitHub page, open an issue. Readers may send a pull request too. Therefore we are opened to suggestions on improvement in any form.
+We have worked diligently through this book. A typo or misinterpretation of a concept may be lurking somewhere. So readers may send us feedback through [our email](mailto:popecan1000@gmail.com) or comment on it on [Swift Python][swift-python-site] GitHub page, open an issue. Readers may send a pull request too. Therefore we are opened to suggestions on improvement in any form.
 
 #
 
-[python-site]: https://www.Python.org/downloads/
+[python-site]: https://www.python.org/downloads/
 [python-on-windows]: https://www.youtube.com/results?search_query=how+to+install+Python+on+windows
 [vscode-site]: https://code.visualstudio.com/
-[pycharm-site]: https://www.jetbrains.com/Pycharm/download/
+[pycharm-site]: https://www.jetbrains.com/pycharm/download/
 [windwos-cmd-site]: https://www.youtube.com/watch?v=MBBWVgE0ewk&list=PL6gx4Cwl9DGDV6SnbINlVUd0o2xT4JbMu
 [unix-linux-cmd-site]: https://www.youtube.com/watch?v=IVquJh3DXUA
 [advanced-cmd]: https://www.youtube.com/playlist?list=PL6gx4Cwl9DGCkg2uj3PxUWhMDuTw3VKjM
-[swift-python-site]: https://github.com/otumian-empire/switf-Python
+[swift-python-site]: https://github.com/Otumian-empire/swift-python
 [our-email]: popecan1000@gmail.com
 [cli-presentation]: https://github.com/Otumian-empire/CLI-presentation
