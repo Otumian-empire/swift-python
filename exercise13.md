@@ -1,8 +1,8 @@
 # Exercise 13 (Some built-in functions)
 
-> We really recommend you check out the [python doc][pydoc-site], see the library reference and click on the built-in functions.
+> We do recommend you check out the [python doc][pydoc-site], see the library reference and click on the built-in functions.
 
-In the previous exercise, `Exercise 12 (Functions)` , we looked into function and we created a couple of our own. Python comes packaged with some function and these functions are known as the built-in functions.
+In the previous exercise, `Exercise 12 (Functions)`, we looked into function and we created a couple of our own. Python comes packaged with some function and these functions are known as the built-in functions.
 
 ## Some built-in functions
 
@@ -28,7 +28,7 @@ In the previous exercise, `Exercise 12 (Functions)` , we looked into function an
 
 ## Examples
 
-``` python
+```python
 # abs - returns an absolute value of a number
 print(abs(2.34), abs(-23.4))
 
@@ -52,39 +52,42 @@ print(f"The sum of the numbers is: {sum(my_list)}")
 
 print(f"sorted list: {sorted(my_list)}")
 
-print(f"reversed list: {reversed(my_list)}")
+# returns a reversed iterator object - castr to a list
+print(f"reversed list: {list(reversed(my_list))}")
+# [i for i in reversed(my_list)]
 
 # these function does not alter the object
 
 # chr and ord
 # chr - returns a character when a number is passed as arg
-print(chr(65))  # this are unicode related
+print(chr(65))  # this are Unicode related
 
 # ord does the opposite of chr
 print(ord('A'))
 
 # float, int, str, list, dict, set
 # these converts objects to their types
-# type returns the ( data) type of an object
+# type returns the (data) type of an object
 # len, range
 # we have seen these two before, for the size and also looping
 
 # input, print
 # we have also seen them before
+
 ```
 
 ## Practicals
 
-* Implement a function known as `all(iterable)` . This function returns `True` if all of the elements of the `iterable` is `True` or the `iterable` is empty, else `False` .
-* Implement a function known as `any(iterable)` . This function returns `True` if any of the elements of the `iterable` is `True` . If the iterable is empty, return False.
-* Implement the `abs(x)` function where `x` , is a number.
-* Implement a function that returns the minimum and maximum numbers in given list. Don't use the built-in function `min` and `max` .
+- Implement a function known as `all_f(iterable)` . This function returns `True` if all of the elements of the `iterable` is `True` or the `iterable` is empty, else `False`. This is the same as the built-in `all` function.
+- Implement a function known as `any_f(iterable)` . This function returns `True` if any of the elements of the `iterable` is `True` else `False`. If the iterable is empty, return False.
+- Implement the function `abs_f(x)` which behaves like the `abs` function, where `x` , is a number.
+- Implement a function, `min_max_f` that returns the minimum and maximum numbers in a given list passed as an argument. Don't use the built-in function `min` and `max`.
 
 ## Summary
 
-* Built-in functions make working in python much more easier and flexible without you having to implement your own version of any of those function.
-* Built-in functions does not change the object.
+- Built-in functions make working in python much easier and flexible. We don't have to implement our own version of any of those function.
+- Built-in functions do not change the object.
 
 #
-[pydoc-site]:(https://python.org)
 
+[pydoc-site]: (https://python.org)
