@@ -1,21 +1,23 @@
 # Exercise 16 (Set)
-A set is a mutable sequence with no duplicates. Just like a list, but no duplicate. A set is delimited by open and close curly brackets.
+
+A set is a mutable sequence with no duplicates. Just like a list, but with no duplicates. A set is delimited by open and close curly brackets, `{}`.
 
 ## Structure of a set
 
-``` Python
+```Python
 # empty list
-empty_list = set()  # not {}, this is a `dict` 
+empty_list = set()  # not {}, this is a `dict`
 
 # set structure
 sample_set = {1, 2, 3}
+
 ```
 
 ## Casting
 
-We may cast any sequence to a set by passing the sequence as an argument to `set()` . This returns a unique elements of the sequence.
+We may cast any sequence to a set by passing the sequence as an argument to `set()` . This returns unique elements of the sequence.
 
-``` Python
+```Python
 # str to set
 name = "Gangliona Messian"
 set_str = set(name)
@@ -28,28 +30,29 @@ my_set = set(my_list)
 
 print(my_set)
 # output-> {1, 2, 3}
+
 ```
 
 ## Set operations and functions
 
-Assume we have two sets, A anf B.
-| Operator | Function      | description |
-| :------- | :------:      | ----------: |
-| `&` | intersection  | returns elements in both sets |
-| `\|` | union         | returns elements in either set |
-| `-` | difference    | returns elements in set A that are not in B |
+Assume we have two sets, A and B.
+| Operator | Function | description |
+| :------- | :------: | ----------: |
+| `&` | intersection | returns elements in both sets |
+| `\|` | union | returns elements in either set |
+| `-` | difference | returns elements in set A that are not in B |
 | `^` | symmetric_difference | returns elements that are not in both sets |
-| `>=` | issuperset    | returns True if A is a super set of B, else False |
-| `<=` | issubset      | returns True if A is a subset set of B, else False |
-|      | disjoint      | returns is both sets have nothing in common |
-|          | add           | adds an element to the set, just like append in list |
-|          | update        | adds a sequence to the set, just like extend in list |
-|          | discard       | removes an element from the list                     |
-|          | remove        | just like discard but returns an error when the element doesn't exist |
+| `>=` | issuperset | returns True if A is a superset of B, else False |
+| `<=` | issubset | returns True if A is a subset set of B, else False |
+| | isdisjoint | returns True if both sets have nothing in common |
+| | add | adds an element to the set, just like append in list |
+| | update | adds a sequence to the set, just like extend in list |
+| | discard | removes an element from the list |
+| | remove | just like discard but returns an error when the element doesn't exist |
 
 ## Examples
 
-``` Python
+```Python
 # Let our two sets be
 set_a = {1, 2, 3, 6}
 set_b = {3, 4, 5, 6}
@@ -67,25 +70,25 @@ ounion_ab = set_a | set_b
 print('union: ', funion_ab == ounion_ab)
 
 # difference
-fdiff_ab = a.difference(b)  # output-> {1, 2}
-odiff_ab = a - b  # output-> {1, 2}
+fdiff_ab = set_a.difference(set_b)  # output-> {1, 2}
+odiff_ab = set_a - set_b  # output-> {1, 2}
 
-fdiff_ba = b.difference(a)  # output-> {4, 5}
-odiff_ba = b - a  # output-> {4, 5}
+fdiff_ba = set_b.difference(set_a)  # output-> {4, 5}
+odiff_ba = set_b - set_a  # output-> {4, 5}
 
 # symmetric difference
-symm_diff = a.symmetric_difference(b)
+symm_diff = set_a.symmetric_difference(set_b)
 print(symm_diff)  # output-> {1, 2, 4, 5}
 
 # upperset and subset
-is_a_super_set = a.issuperset(b) == (a >= b)
+is_a_super_set = set_a.issuperset(set_b) == (set_a >= set_b)
 print(is_a_super_set)  # False
 
-is_a_subset_set = a.issubset(b) == (a <= b)
+is_a_subset_set = set_a.issubset(set_b) == (set_a <= set_b)
 print(is_a_subset_set)  # False
 
-# disjoint
-a.disjoint(b)  # output-> False
+# isdisjoint
+set_a.isdisjoint(set_b)  # output-> False
 
 # add
 set_a.add(8)
@@ -101,11 +104,12 @@ set_a.discard(10)  # output-> {2, 3, 4, 5, 6, 8}
 # remove
 set_a.remove(2)  # output-> {3, 4, 5, 6, 8}
 set_a.remove(2)  # error-> KeyError
+
 ```
 
 ## Practicals
 
-Implement your own version of 
+Implement a custom version of
 
     - Intersection
     - Union
@@ -115,11 +119,10 @@ Implement your own version of
     - update
     - isset - it checks if a sequence has no duplicate ( remember `count` )
 
-> make use of all the we've learnt.
+> make use of all that we've learnt.
 
 ## Summary
 
-* A set is just more like a list but with no duplicates
-* Sample set, `my_set = {1,3,4}` 
-* cast a sequence to a set, `set(sequence)` 
-
+- A set is just more like a list but with no duplicates
+- Sample set, `my_set = {1,3,4}`
+- cast a sequence to a set, `set(sequence)`
