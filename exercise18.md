@@ -1,28 +1,29 @@
-# Exercise 18 (Execptions)
-An exception is an error generated when the code is executed. Sometimes, this is also know as runtime error because we only get such error when the code is running.
+# Exercise 18 (Exceptions)
+
+An exception is an error. These errors are generated when the code is executed. Sometimes, these are also known as Runtime errors because we only get these errors when the code is executed.
 
 ## Some types of exceptions
 
-There are a lot of Exceptions and we'd just list some of the mostly seen ones.
+There are a lot of [Exceptions][py-exceptions] and we'd just list some of the most seen ones.
 
-* ZeroDivisionError
-* AttributeError
-* EOFError
-* ImportError
-* IndexError
-* KeyError
-* NameError
-* RuntimeError
-* ValueError
-* TypeError
+- ZeroDivisionError
+- AttributeError
+- EOFError
+- ImportError
+- IndexError
+- KeyError
+- NameError
+- RuntimeError
+- ValueError
+- TypeError
 
 ## Handling exceptions
 
-It is important to handle exception in our code as it will prevent the abrupt halting of the software. We can handle these errors with a `try` and `except` clauses.
+It is important to handle exception in our code as it will prevent the abrupt halting of the program when running. We can handle these errors with `try` and `except` clauses.
 
 ### Try and catch structure
 
-``` Python
+```Python
 try:
     # code to check
 except (exceptions to handle):
@@ -31,7 +32,7 @@ except (exceptions to handle):
 
 ### Example 1
 
-``` Python
+```Python
 # catch ZeroDivisionError
 # error generated when dividing by zero
 # we shall perform some simple division
@@ -63,9 +64,9 @@ In the above example, it will be best if try and except is used instead.
 
 ### Example 2
 
-Lets try to catch any kind of execption using the `Exception` class.
+Let's try to catch any kind of exception using the `Exception` class.
 
-``` Python
+```Python
 # Lets catch an Exception without being specific
 
 try:
@@ -82,9 +83,9 @@ except Exception as z:
 
 ### Example 3
 
-Lets catch multiple exceptions - as a tuple
+Let's catch multiple exceptions - as a tuple
 
-``` Python
+```Python
 try:
     numerator = int(input('Enter the numerator: '))
     denominator = int(input('Enter the denominator: '))
@@ -98,10 +99,10 @@ except (ZeroDivisionError, NameError, ValueError) as e:
 
 ## Raising exceptions
 
-We can raise our own exception using the `raise` keyword.
+We can force raise an exception using the `raise` keyword.
 
-``` Python
-# let raise our own exception
+```Python
+# let raise an exception
 # so we take an input from the user and we expect an even number else,
 #  we raise the exception
 
@@ -121,7 +122,7 @@ except Exception as e:
 
 Fix this code base on the error message generated:
 
-``` Python
+```Python
 try:
     numerator = input('Enter the numerator: ')
     denominator = int(input('Enter the denominator: '))
@@ -135,8 +136,11 @@ except Exception as z:
 
 ## Summary
 
-* Exceptions are error we get at runtime
-* `Execption` class catches all exceptions in general
-* Use `try` and `catch` to handle exceptions
-* Raise exception using, `raise Exception_type(message)` 
+- Exceptions are error we get at runtime
+- `Execption` class catches all exceptions in general
+- Use `try` and `catch` to handle exceptions
+- Raise exception using, `raise Exception_type(message)`
 
+#
+
+[py-exceptions]: https://docs.python.org/3/library/exceptions.html
