@@ -1,53 +1,55 @@
 # Exercise 20 a (OOP)
-OOP stands for Object Oriented Programming. So, with this, style of doing things ( coding), instead of using just variables or and functions, we use them both, bundled together.
 
-Everything in Python is an object. The integers, floats, strings, etc, are all object. Thus they may have some qualities ( properties/attributes) and some functionalities ( methods/behaviours). It is that OOP, is used to mimic real life objects.
+OOP stands for Object-Oriented Programming. So, with this, style of doing things ( coding), instead of using just variables or and functions, we use them both, bundled together.
+
+Everything in Python is an object. The integers, floats, strings, etc, are all object. Thus they may have some qualities ( properties/attributes) and some functionalities ( methods/behaviours). It is that OOP is used to mimic real-life objects. We can create a human object, who happens to have a name, a job, maybe or even if this human can disassemble and reassemble a system unit. This human can program, sing in the shower, this human can eat and drink. This human has some qualities and can do certain things. We can do this with a class.
 
 ## Class
 
-A class is like a blue-print of an object which defines the properties and functionalities of the object. For a real life example, lets think of a human being as an example of a class. A human being, surely has a name, age, address, maybe married thus marital status, color of eyes and hair, complexity and so on. These are the properties ( attributes) of the human being. They describe the human being - 'object'.
+A class is like a blueprint of an object which defines the properties and functionalities of the object. For a real-life example, let's think of a human being as an example of a class. A human being, surely has a name, age, address, maybe this human is married thus marital status, the colour of eyes and hair, complexity and so on. These are the properties (attributes) of the human being. They describe the human being - the 'object'.
 
-Again, a human is capable of doing certain things like talking, sleeping, drinking, jumping, thinking, etc. Humans have functionalities. As an object does something.
+Again, a human is capable of doing certain things like talking, sleeping, drinking, jumping, thinking, etc. Humans have functionalities. As such an object does something or acts.
 
 > It is a conversion that, our _file name_ for the class, matches the _class name_ for our class object.
 
 ## Structure of a class
 
-Minimally, just like we define a function, we start with the `def` keyword followed by the `function_name` then a tuple of arguments or just empty parenthesis. Python has the `class` keyword for defining a class.
+Minimally, just like we defined a function, we started with the `def` keyword, followed by the `function_name` then a tuple of arguments or just empty parenthesis. Python has the `class` keyword for defining a class.
 
-> Remember, that indentation matters in Python.
+> Remember, that indentation matters in Python. It is that which defines the block.
 
-``` Python
-# a minimal class that does nothing
-# with class_name, Human
-# it is a conversion that one begins a class name with an 
+```Python
+# a class that does nothing with class_name, Human
+# it is a conversion that one begins a class name with an
 # uppercase letter
 class Human:
     pass
+
 ```
 
-> `pass` is a keyword, we use it when maybe we are not ready to implement a function or class yet
+> `pass` is a keyword, we use it when maybe we are not ready to implement a function or class yet.
 
 ## Constructor
 
-When a class is created, one may like to initialize some data thus pass them to the constructor. The constructor is actually a function that is called when an `instance` of the class is created. It has a special name, `__init__(some_args)` .
+When a class is created, one may like to initialize some data thus pass them to the constructor. The constructor is a function that is called when an `instance` of the class is created. It has a special name, `__init__(some_args)` .
 
-``` Python
-# a class with a constructor that does nothig
+```Python
+# a class with a constructor that does nothing
 class Human:
     def __init__():
         pass
+
 ```
 
 ## Properties
 
-A proerty is basically a variable. Yes, the variable that we have discussed in `Exercise 1 ( Creating a variable)` , just that here they belong to a class thus they are referred to as properties of that class.
+A property is a variable. Yes, the variable that we have discussed in `Exercise 1 ( Creating a variable)`, just that here they belong to a class thus they are referred to as properties of that class.
 
 ## Methods
 
-A method is a function of the class. There is only a slight difference. Lets create a class with an attribute, `name` , a `constructor` and a method `say_hello` , that prints `hello {name}` to the screen.
+A method is a function of the class. There is only a slight difference. Let's create a class with an attribute, `name`, a `constructor` and a method `say_hello`, that prints `hello {name}` to the screen.
 
-``` Python
+```Python
 # a class with one attribute, name
 # a method, say_hello, that prints hello
 class Human:
@@ -57,39 +59,37 @@ class Human:
 
     def say_hello():
         print(f"hello, {self.name}")
+
 ```
 
 ### Code breakdown
 
-* `class Human:` creates a class with name `Human` 
-* `def __init__(self, name)` creates a Constructor and passes a data, which is `name` to it.
-* In the constructor block, the data, `name` , was assigned to an attribute of the class `self.name` 
-* The `self` here refers to the `class` object itself - `Human` .
-* So `self.name` is the same as `Human.name` 
-* `self` must always be used as it is a conversion in Python, which means we could use another keyword in place of `self` 
+- `class Human:` creates a class with the name `Human`
+- `def __init__(self, name)` creates a Constructor and passes a data, which is `name` to it.
+- In the constructor block, the data, `name`, was assigned to an attribute of the class `self.name`
+- The `self` here refers to the `class` object itself - `Human`.
+- So `self.name` is the same as `Human.name`
+- `self` must always be used as it is a conversion in Python, which means we could use another keyword in place of `self`
 
 ### Note
 
-``` Python
+```Python
 def say_hello(name):
         print(f"hello, {name}")
+
 ```
 
-In `say_hello` , we could just pass the name data to it and then print `hello {name}` but we passed the name to the constructor instead. This will make the name attribute accessible everywhere in the class thus we reference it with the `self` keyword, `self.name` .
+In `say_hello`, we could just pass the name data to it and then print `hello {name}` but we passed the name to the constructor instead. This will make the name attribute accessible everywhere in the class thus we reference it with the `self` keyword, `self.name`.
 
 ## Creating an instance of a class
 
-An instance of a class is an object of the class with all the attributes and methods of that class. So the `class Human` may have an instance of say, `John` . If we have a class of `Car` , `Ferrari` is an instance of the class `Car` .
+An instance of a class is an object of the class with all the attributes and methods of that class. So the `class Human` may have an instance of say, `John`. If we have a class of `Car`, `Ferrari` is an instance of the class `Car`. We created a class earlier and we shall create an instance of that class.
 
-``` Python
-# We created a class earlier
-# we shall create an instance of that class
-# class name is Human, with an attribute, name,
-# passed to it's constructor
-# and a method, say_hello() that prints hello with the data passed as name.
+Class name, `Human`, with an attribute, `name` passed to its constructor and has a method, `say_hello()` that prints hello with the data passed as `name`.
 
+```Python
 john = Human('John Doe')
-# we passed name into the contructor
+# we passed the name into the constructor
 
 # access/call the method
 # class_object.method_name() or class_instance.method_name()
@@ -100,24 +100,22 @@ john.say_hello()
 john.name = "Sandra Doe"
 john.say_hello()
 # output-> hello Sandra Doe
+
 ```
 
 ### Note
 
-* Use the dot, `.` operator to access methods and attributes of the class
-* Python is case sensitve, thus `human` and `Human` are completely different things
-* When a method returns a value, just like a normal function does, we may get the returned value and print it.
+- Use the dot, `.` operator to access methods and attributes of the class
+- Python is case sensitive, thus `human` and `Human` are completely different
+- When a method returns a value, just like a normal function does, we may get the returned value and print it.
 
 ## Rectangle class
 
-> create a file, with name `rectangle.py` 
+> create a file, with the name `rectangle.py`
 
-``` Python
-# this is a simple is class to model a rectangle
-# a rectangle has length and breadth, so we pass
-#  the length and breadth to the constructor
-# it has a 2 methods that would return the area and perimeter.
+This is a sample class to model a rectangle. A rectangle, we know has a length and a breadth. We shall pass the length and breadth as data into the constructor. In our case, we are interested in the area and the perimeter of the said rectangle thus we shall create two methods, `area` and `perimeter` to return the area and perimeter of the rectangle.
 
+```Python
 class Rectangle:
 
     def __init__(self, length, breadth):
@@ -132,6 +130,7 @@ class Rectangle:
         """ returns the perimeter as, 2 * (length + breadth) """
         return 2 * (self.length + self.breadth)
 
+
 # instance of the rectangle class
 rect_inst = Rectangle(2, 3)  # l = 2, b = 3
 
@@ -139,30 +138,31 @@ rect_inst = Rectangle(2, 3)  # l = 2, b = 3
 area = rect_inst.area()
 
 # get the perimeter
-perrmeter = rect_inst.perimeter()
+perimeter = rect_inst.perimeter()
 
-print(f"The area and perimeter of the rectangle are, {area} and {perrmeter} respectively")
+print(
+    f"The area and perimeter of the rectangle are, {area} and {perimeter} respectively")
+
 ```
 
-> `""" this is a doc string """` , it is just like a comment.
+> `""" this is a docstring """` , it is just like a comment.
 
 ## Practicals
 
-* Re-write the `Rectangle` class, and check for execptions.
-* Write a class for basic mathematical operations, such as addition, subtraction, multiplication, division, floordivision ( aka integer division), modulo ( aka remainder), power, etc
-* Write a class for a document statistics. Refer to the `exercise 19` to read about document statistics.
-* Write a program that allows creating, reading and updating of the content of a file using OOP.
+- Re-write the `Rectangle` class, and check for exceptions.
+- Write a class for basic mathematical operations, such as addition, subtraction, multiplication, division, floor division ( aka integer division), modulo ( aka remainder), power without using built-in functions
+- Write a class for document statistics. Refer to `exercise 19` to read about document statistics.
+- Write a program that allows creating, reading and updating of the content of a file using OOP.
 
 ## Summary
 
-* OOP = Object Oriented Programming
-* `class` is the blue print of an object
-* classes have `attributes` and `methods` 
-* `attribute` is a data/variable
-* `method` is a function
-* constructor, `__init__(some_args)` , is used to initialize some attributes
-* constructors to do not return any value
-* say we have class, Human, `jojn = Human()` is an instance of the class
-* `class_name().attribute_name` or `class_instance.attribute_name` to access a class attribute
-* `class_name().method_name` or `class_instance.method_name` to access a class method
-
+- OOP = Object Oriented Programming
+- `class` is the blue print of an object
+- classes have `attributes` and `methods`
+- `attribute` is a data/variable
+- `method` is a function
+- constructor, `__init__(self, some_args)` , is used to initialize some attributes
+- constructors to do not return any value
+- say we have class, Human, `john = Human()` is an instance of the class
+- `class_name().attribute_name` or `class_instance.attribute_name` to access a class attribute
+- `class_name().method_name` or `class_instance.method_name` to access a class method
