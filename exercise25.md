@@ -1,43 +1,45 @@
 # Exercise 25 (Python SQLite)
 
-In the previous exercise. `Exercise 24 ( SQL)` we discussed SQL and used it to write to and read from the database. In this exercise we shall make use of a built-in database know as `sqlite3` . Read more about [sqlite3][sqlite3-python-site].
+In the previous exercise. `Exercise 24 (SQL)` we discussed SQL and used it to write to and read from the database. In this exercise, we shall make use of a built-in database know as `sqlite3`. Read more about [sqlite3][sqlite3-python-site].
 
 ## Create database and table with
 
 We do believe [SQLite Browser][sqlitebrowser-site] has been installed. We shall create a database, `sample.db` and save it into a folder, we shall use, `Sample` as the folder name.
 
-Create create table using this script.
+Create a table using this script.
 
-``` SQL
+```SQL
 CREATE TABLE `profile` (
-	 `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-	 `name` TEXT,
-	 `job` TEXT,
-	 `skill` TEXT,
-	 `salary` INTEGER
+    `id` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    `name` TEXT,
+    `job` TEXT,
+    `skill` TEXT,
+    `salary` INTEGER
 );
 ```
 
-## Connect to database
+## Connect to the database
 
 Before we use the `sqlite3` database, we must first `import` it, then connect to it.
 
-``` Python
+```Python
 import sqlite3
 
 DATABASE_NAME = 'sample.db'
 
 # create connection
 connection = sqlite3.connect(DATABASE_NAME)
+
 ```
 
 ## Cursor Object
 
 After we create the connection to the database, we then make use of its cursor object to read and write to the database.
 
-``` Python
+```Python
 # cursor object
 cursor = connection.cursor()
+
 ```
 
 ## Execute
@@ -46,10 +48,10 @@ We pass an SQL query and some parameters to the `execute` method after we have c
 
 ### SQL query
 
-For the SQl query, it is recommended to use placeholders instead of passing the actual values directly into the qeury.
+For the SQL query, it is recommended to use placeholders instead of passing the actual values directly into the query.
 
-``` Python
-# consider some arbituary query
+```Python
+# consider some arbitrary query
 
 # don't do this
 sql_query = "SELECT * some_tb WHERE `some_field` = 2"
@@ -58,11 +60,12 @@ sql_query = "SELECT * some_tb WHERE `some_field` = 2"
 sql_query = "SELECT * some_tb WHERE `some_field` = ?"
 
 # the `?` is a placeholder
+
 ```
 
 ### Execute method
 
-``` Python
+```Python
 # profile -> id:int, name:str, job:str, skill:str, salary:int
 # `id` is a primary key and auto increments so we shall ignore it
 
@@ -71,12 +74,12 @@ job = "Software Engineer"
 skill = "Python Developer"
 salary = 3000
 
-# writing and updating has the same effect of 
+# writing and updating has the same effect of
 # affectting some rows, else rowcount is -1
 # reading rather returns an iterable (a row - tuple)
 sql_query = "INSERT INTO `profile` ( `name` , `job` , `skill` , `salary` ) VALUES(?, ?, ?, ?)"
 
-# the second argument is of the form, *parameters - remember `*arg` 
+# the second argument is of the form, *parameters - remember `*arg`
 # there would be a change in the database, thus get the number of affected rows
 # with `rowcount` attribute
 num_affected_row = cursor.execute(sql_query, name, job, skill, salary).rowcount
@@ -90,28 +93,31 @@ sql_query = "SELECT * FROM `profile` "
 row_profiles = cursor.execute(sql_query).fetchall()
 
 # do something with row_profiles
+
 ```
 
 ## Commit
 
-Sure commit here sound familiar, from `exercise 23 (Git)` . Commit mean save/write changes made to the database permanently. Thus after an `insert, update or delete` you have to commit.
+Sure commit here sound familiar, from `exercise 23 (Git)`. Commit mean save/write changes made to the database permanently. Thus after an `insert, update or delete` you have to commit.
 
-``` Python
+```Python
 connetion.commit()
+
 ```
 
 ## Close cursor and connection
 
-After every thing, we must close the cursor and close the database. This is done so that the database isn't blocked.
+After everything, we must close the cursor and close the database. This is done so that the database isn't blocked.
 
-``` Python
+```Python
 cursor.close()
 connection.close()
+
 ```
 
 ## Full code
 
-``` Python
+```Python
 import sqlite3
 
 DATABASE_NAME = 'sample.db'
@@ -147,11 +153,12 @@ connetion.commit()
 # close cursor and connection
 cursor.close()
 connection.close()
+
 ```
 
 ## Reading
 
-``` Python
+```Python
 import sqlite3
 
 DATABASE_NAME = 'sample.db'
@@ -177,7 +184,8 @@ if rows > 0:
         skill = row[4]
         salary = row[5]
 
-        print(f"ID: {id} - {name} is a(n) {job} specialized in {skill} and earns {salary}")
+        print(
+            f"ID: {id} - {name} is a(n) {job} specialized in {skill} and earns {salary}")
 else:
     print("profile writing to database unsuccessful")
 
@@ -186,42 +194,41 @@ else:
 # close cursor and connection
 cursor.close()
 connection.close()
+
 ```
 
 ## Practicals
 
 > Use a class if possible
 
-* Write a script that returns the number of characters in the entire file, and the number of characters on each line. Save these two into a database with the name of the file.
-* Write a script that returns the document statistics of a give file. The document statistics are number of lines, number of words number of characters with space and witout space.
+- Write a script that returns the number of characters in the entire file and the number of characters on each line. Save these two into a database with the name of the file.
+- Write a script that returns the document statistics of a given file. The document statistics are the number of lines, number of words number of characters with space and without space.
 
-    
+  ```
+  file name
+  ---------
+  Lines      - 8
+  Words      - 71
+  Char (ws)  - 403
+  Char (wos) - 337
+  ```
 
-    ``` 
-    file name
-    ---------
-    Lines      - 8
-    Words      - 71
-    Char (ws)  - 403
-    Char (wos) - 337
-    ```
+  Write these into a database
 
-    Write these into a database
-
-* Write a scripts that backs the content of a file up. Save the back up in the database.
+- Write a script that backs the content of a file up. Save the back up in the database.
 
 ## Summary
 
 The concept or steps behind the use of `sqlite3` is quite simple.
 
-* `sqlite3` is a built-in light weight database
-* `connect` to the database
-* create a `cursor` object
-* `execute` some queries
-* `commit` the changes
-* `close` cursor and connection
+- `sqlite3` is a built-in lightweight database
+- `connect` to the database
+- create a `cursor` object
+- `execute` some queries
+- `commit` the changes
+- `close` cursor and connection
 
 #
-[sqlite3-python-site]:https://docs.python.org/3.7/library/sqlite3.html
-[sqlitebrowser-site]:https://sqlitebrowser.org/dl/
 
+[sqlite3-python-site]: https://docs.python.org/3.7/library/sqlite3.html
+[sqlitebrowser-site]: https://sqlitebrowser.org/dl/

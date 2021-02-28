@@ -1,14 +1,15 @@
 # Exercise 21 (Modules)
+
 A module is a file (script), containing definitions and statements. This can be any program that we write/wrote and hope to use that same code without copying and pasting the code into the new script. All we have to do is to `import` them.
 
 ## Example
 
-Consider the code below, this is taken from `exercise 12 a (Functions)` .
+Consider the code below, this is taken from `exercise 12 a (Functions)`.
 
-``` Python
+```Python
 # file name: area.py
 # description:
-#   A program that calculates and prints the area of a triangle 
+#   A program that calculates and prints the area of a triangle
 #   taking the base and height as inputs
 
 def calc_area():
@@ -17,50 +18,55 @@ def calc_area():
 
     area = 0.5 * base * height
 
-    print(f"The area of a triagle of base, {base} and height, {height} is {area}")
+    print(
+        f"The area of a triagle of base, {base} and height, {height} is {area}")
+
 ```
 
 ## Import a module
 
-Importing a module is very simple actually, all we need is the `import` keyword and the module name. The module name is the name of the file/script, without the suffix (extension), `.py` 
+Importing a module is very simple really, all we need is the `import` keyword and the module name. The module name is the name of the file/script, without the suffix (extension), `.py`
 
-``` Python
+```Python
 import modele_name
+
 ```
 
-## Import `area.py` 
+## Import `area.py`
 
-To import the `area.py` , and make use of `calc_area` we have to import it.
+To import the `area.py`, and make use of `calc_area` we have to import it.
 
-``` Python
+```Python
 import area
 
-# think of this `import area` like a class
-# with some properties and methods
-# the dot notation will work, actually, that's how it would work
+# think of this `import area` like an object (which it is) with some
+# properties and methods. The dot notation will work here is
+# accessing the variables and functions
 
 area.calc_area()
 
-# refer to this same code in `exercise 12 a (Functions)` 
+# refer to this same code in `exercise 12 a (Functions)`
 # we called the function similar to how we've done here
 # just without the module name and this is because the function is in the module
+
 ```
 
 ## Import objects from a module
 
-Lets assume that there is at least a function in the module and we want to make use of a particular one or all, using the `from module import this_functionality ...` annotation.
+Let's assume that there is at least a function in the module and we want to make use of a particular one or all, using the `from module import this_functionality ...` annotation.
 
-Add a function that calculates the perimeter of the triangle, `calc_peri` , to the `area.py` script and rename the module to `triangle.py` .
+Add a function that calculates the perimeter of the triangle, `calc_peri`, to the `area.py` script and rename the module to `triangle.py`.
 
-``` Python
+```Python
 from module_name import object_name
+
 ```
 
 ### Import a particular object
 
 Our goal here is to import `calc_area` and `calc_peri` from the `triangle` module.
 
-``` Python
+```Python
 from triangle import calc_area, calc_peri
 
 # call the calculate area function
@@ -69,13 +75,14 @@ calc_area()
 
 # call the calculate perimeter function
 calc_peri()
+
 ```
 
 ### Import all objects
 
-Our goal here is to import all the objects in the module. This can be achieved by using `*` to imply all. With these we have access to all the objects.
+Our goal here is to import all the objects in the module. This can be achieved by using `*` to imply all. With this, we have access to all the objects. Remember that import with `*` is not a good practice.
 
-``` Python
+```Python
 from triangle import *
 
 # call the calculate area function
@@ -83,6 +90,7 @@ calc_area()
 
 # call the calculate perimeter function
 calc_peri()
+
 ```
 
 #### Note
@@ -93,17 +101,17 @@ calc_peri()
 
 ## Math module
 
-The math module contains some  mathetical functions algebra, logarithm, trignometry, some constants and others.
+The math module contains some mathematical functions algebra, logarithm, trigonometry, some constants and others.
 
-Lets make use of pi, e, gcd, exp, factorial, pow, sqrt, cos, sin.
+Let's make use of pi, e, gcd, exp, factorial, pow, sqrt, cos, sin.
 
 > pi and e are constants and the rest are functions.
 
-We are going to import a lot of things from the math module thus to keep it structured we shall group them as tuples  though it will work fine anyways.
+We are going to import a lot of things from the math module thus to keep it structured we shall group them as tuples though it will work fine anyway.
 
-``` Python
+```Python
 # import objects from the math lib
-# making use of some constants such as `pi` and `e` ,
+# making use of some constants such as `pi` and `e`,
 # some trig function like the cosine and sine
 # and other functions
 
@@ -164,7 +172,7 @@ print(f"The factorial, {gcd_int}!, is {fact_int}")
 
 ## More example
 
-``` Python
+```Python
 # file name: employee.py
 # calculating the gross pay
 
@@ -197,13 +205,14 @@ class Employee:
             gross_pay = self.salary
 
         return gross_pay
+
 ```
 
 ### Note
 
-We can do, `from module import object as pseudoname` where the object is now pseudoname. This may allow the resolution of conflicting names
+We can do, `from module import object as alias`. This may allow the resolution of conflicting names. Say we have Square and Rectangle, with the same function names, we use the alias concept, `as`, to resolve it by giving them specific names.
 
-``` Python
+```Python
 # import employee script
 from Employee import Employee as App
 
@@ -212,12 +221,14 @@ print("Employee")
 me = App("John Matthew Doe", "Python Developer", 1200.00)
 print(f"My name is {me.name} and i am a {me.job}.")
 print(f"My salary is {me.salary}.")
-print(f"When i work overtime, My salary for the month is {me.return_gross_pay(400)}")
+print(
+    f"When i work overtime, My salary for the month is {me.return_gross_pay(400)}")
+
 ```
 
 Or
 
-``` Python
+```Python
 from triangle import calc_area as area, calc_peri as perimeter
 
 # call area
@@ -225,56 +236,73 @@ area()
 
 # call perimeter
 perimeter()
+
+```
+
+We could have imported `calc_area` and `calc_peri` on different lines.
+
+```Python
+from triangle import calc_area as area
+from triangle import calc_peri as perimeter
+
 ```
 
 ## Practicals
 
-* As practice project, write a script, `mathsmodule.py` that performs mathemathical operations such as addition, subtracion, etc. Use a class and create a `test.py` script then import it there. Our `module` should pass these test.<br>Assume that the method names will include, `add, subtr, mult, div, floor_div, pow, mod` . Add comments and then create a new file, `mathsmodule.md` - this can by a `.txt` file too. The documentation, should have information about the developer, what the module is about, how to use the module, how and what to improve, how the methods work and how to use the methods, some errors we expect to occur, some constants that were used, etc. We hope this is becoming clear.
+- As a practice project, write a script, `mathsmodule.py` that performs mathematical operations such as addition, subtraction, etc. Use a class and create a `test.py` script then import it there. Our `module` should pass these test.<br>Assume that the method names will include, `add, subtr, mult, div, floor_div, pow, mod`. Add comments and then create a new file, `mathsmodule.md` - this can be a `.txt` file too. The documentation should have information about the developer, what the module is about, how to use the module, how and what to improve, how the methods work and how to use the methods, some errors we expect to occur, some constants that were used, etc. We hope this is becoming clear.
 
-    - test add
-        - add(1,2) = 10
-        - add(1,-2) = -1
-        - add(1,2,3,4) = 10
+  - test add
 
-    - test subtr
-        - subtr(1,2) = -1
-        - subtr(1,-2) = 3
+    - add(1,2) = 10
+    - add(1,-2) = -1
+    - add(1,2,3,4) = 10
 
-    - test mult
-        - add(1,2) = 2
-        - add(1,-2) = -2
-        - add(1,2,4) = 8
+  - test subtr
 
-    - test div
-        - div(1,2) = 0.5
-        - div(1,-2) = -0.5
-        - div(5, 0) = None
+    - subtr(1,2) = -1
+    - subtr(1,-2) = 3
 
-    - test floor_div
-        - floor_div(1,2) = 10
-        - floor_div(1,-2) = -1
-        - floor_div(1,2,3,4) = 10
+  - test mult
 
-    - test pow
-        - pow(1,2) = 1
-        - pow(2,3) = 8
-        - pow(2,-2) = 0.25
+    - add(1,2) = 2
+    - add(1,-2) = -2
+    - add(1,2,4) = 8
 
-    - test mod
-        - mod(1,2) = 1
-        - mod(22,7) = 1
+  - test div
 
-* For a second version of this program, let a method take 3 args, operator, first_operand, second_operand. Instead of calling any of the methods such as add, just call, `evaluate` with arguments such as `evaluate('+', 2, 5)` to return 7. This should work even if the second and third arguments are in a form of strings such as `evaluate('+', '2', '5')` .
+    - div(1,2) = 0.5
+    - div(1,-2) = -0.5
+    - div(5, 0) = None
 
-* For a third version, instead of the symbols, such as using, `+` , use `add` instead. Thus `evaluate(+, 2, 5)` , `evaluate('+', '2', '5')` and `evaluate('add', 2, 5)` or `evaluate('add', '2', '5')` works the same.
+  - test floor_div
+
+    - floor_div(1,2) = 10
+    - floor_div(1,-2) = -1
+    - floor_div(1,2,3,4) = 10
+
+  - test pow
+
+    - pow(1,2) = 1
+    - pow(2,3) = 8
+    - pow(2,-2) = 0.25
+
+  - test mod
+    - mod(1,2) = 1
+    - mod(22,7) = 1
+
+- For the second version of this program, let a method take 3 args, operator, first_operand, second_operand. Instead of calling any of the methods such as add, just call, `evaluate` with arguments such as `evaluate('+', 2, 5)` to return 7. This should work even if the second and third arguments are in a form of strings such as `evaluate('+', '2', '5')`.
+
+- For a third version, instead of the symbols, such as using, `+`, use `add` instead. Thus `evaluate(+, 2, 5)` , `evaluate('+', '2', '5')` and `evaluate('add', 2, 5)` or `evaluate('add', '2', '5')` works the same.
+- Write a program that simulates the rolling of a dice. A fair dice has 6 sides numbered from 1 to 6. Take an integer input from the user as the number of times the dice must be rolled and this value must be greater than `50`. `print` the number of times a particular number was obtained when the dice was rolled. Make use of `randint` from `random` module.
 
 ## Summary
 
-* A module is a script that we can reuse in another code - look at the advantages of using a function in `Excercise 12 a (Functions)` 
-* use the `import` keyword to bring in a module
-* `from module import *` imports all the objects in the module
-* `from module import some_objects` import these objects
-* `from module import object as obj` imports object given a new name `obj` from module
+- A module is a script that we can reuse in another code - look at the advantages of using a function in `Excercise 12 a (Functions)`
+- use the `import` keyword to bring in a module
+- `from module import *` imports all the objects in the module
+- `from module import some_objects` import these objects
+- `from module import object as obj` imports object given a new name `obj` from module
 
 #
-[python-site]:https://www.Python.org
+
+[python-site]: https://www.Python.org
