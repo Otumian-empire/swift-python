@@ -2,7 +2,7 @@
 
 ## Practical
 
-> _We confidently believe that at this stage, with patience, persistence and clear mind and an intension to solve a problem, you can do so many things, now. Surely some will be challenging but through this, you become better_
+> _We confidently believe that at this stage, with patience, persistence and clear mind and an intention to solve a problem, you can do so many things, now. Surely some problems will be challenging but through this difficulty, you become better._
 
 Fixed this code. Do not panic, it is easier than you may sweat. Some little assistance.
 
@@ -16,6 +16,8 @@ Fixed this code. Do not panic, it is easier than you may sweat. Some little assi
     So if there is an input, you provide the input directly.
 - try negative values too - just break it and fix it
 - add comments where you think necessary - try commenting on the code as you may come back in a week or more time.
+
+> Download practical file [here][ex20x_practicals]
 
 ```Python
 import random
@@ -177,3 +179,7 @@ user.start_game()
 - pass the parent class as an argument to the child class
 - pass multiple classes that way, for multiple inheritances
 - use `super()` to access the original attributes and methods of the parent class
+
+#
+
+[ex20x_practicals]: https://gist.github.com/Otumian-empire/ebbea0703bdf105ce1ae1ffe0f72d60a.
