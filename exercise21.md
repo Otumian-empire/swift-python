@@ -39,9 +39,9 @@ To import the `area.py`, and make use of `calc_area` we have to import it.
 ```Python
 import area
 
-# think of this `import area` like an object (which it is) with some
-# properties and methods. The dot notation will work here is
-# accessing the variables and functions
+# think of this `import area` like an object with some
+# properties and methods. The dot notation will work here. It is
+# for accessing the variables and functions in the imported object
 
 area.calc_area()
 
