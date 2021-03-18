@@ -1,4 +1,4 @@
-# Exercise 24 ( SQL)
+# Exercise 24 (SQL)
 
 SQL = Structured Query Language.
 

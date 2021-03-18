@@ -1,6 +1,62 @@
 # Exercise 22 (Unit Testing)
 
-Unit testing is an important part of software engineering. We do unit testing to check the correctness of our program. Usually, in most firms, unit tests are written before the code is written - this is known as Test-Driven Development. We shall write the tests after we write the code. We shall use the built-in `unittest` module. There are many testing concepts but we shall look at `TestCase`.
+Open the python console (REPL) on the command line (terminal).
+
+```
+Python 3.8.5 (default, Jan 27 2021, 15:41:15)
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+```
+
+That is how mine looks like. On windows, if you can see something like this, then you have to go back to `exercise 0 (Set up)` and add the python to the environmental variable path.
+
+## assert
+
+`assert` keyword raises an error, an `AssertionError` when the assertion fails. Consider the snippet below on how to use `assert`.
+
+```Python
+assert 1 == 1
+
+```
+
+The above assertion passes because `1 == 1` is True. There won't be an error since the assertion passed.
+
+> Try out for a false assertion.
+
+```sh
+Python 3.8.5 (default, Jan 27 2021, 15:41:15)
+[GCC 9.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> assert 1 == 2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AssertionError
+>>>
+
+```
+
+If you want to use `assert` in our code, we would have to `try and except` it - we have to catch the error raised. We discussed `try and except` in `exercise 18 (Exceptions)`. Consider the code below where we catch the raised exception.
+
+```Python
+try:
+    assert 1 == 2
+    print("Hoo, we are safe now")
+
+except:
+    print("Haa, we are not safe, man. The assertion failed!!")
+
+# output
+# Haa, we are not safe, man. The assertion failed!!
+
+```
+
+Have you seen a problem that we shall face when we work on huge or complicated projects? We should use a Unit testing module. Python comes with a unit testing module, `unittest`.
+
+## unittest module
+
+Testing is an important part of software engineering. We do unit testing to check the correctness of our program - the individual components (functions). Usually, in most firms, unit tests are written before the code is written - this is known as Test-Driven Development. We shall write the tests after we write the code. We shall use the built-in `unittest` module. There are many testing concepts but we shall look at `TestCase`.
 
 ## Some testing methods
 

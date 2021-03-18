@@ -6,7 +6,7 @@ We would want to keep our projects on our local server, but our disk could corru
 
 ## Install git
 
-We shall install Git using [this website][git-site], depending on the OS. Afterwards, we do `git --version on the command-line to check if git has been installed successfully.
+We shall install Git using [this website][git-site], depending on the OS. Afterwards, we do `git --version` on the command-line to check if git has been installed successfully.
 
 ## Configure git
 
@@ -33,10 +33,10 @@ There may be two or more instances where we would need to create (or use) a git 
 
 ### Local repository
 
-When the project is created on our local server and we want it under version control, we do the following:
+When the project is or would be created on our local server and we want it under version control, we do the following:
 
 - change directory into the folder of interest, `cd project_root_dir`
-- then do, `git init` - to start git
+- then do, `git init` - to initialize git
 
 A `.git` folder will be created at the root of the parent folder.
 
@@ -54,10 +54,18 @@ When the project already exists online, say on [Github][github-site], do the fol
 Here we already have the project or say we have finished developing it locally. We want to push it to the remote repository, do the following:
 
 - initialize the git repo locally, `git init`, if not done already.
-- add (let git track) the files in the local repository, `git add .`
+- add (let git track) the files in the local repository, `git add .`.
+  - The `.` refers to the current directory. So we add all the content in the current directory to git.
+  - The recommended approach will be to create a `.gitignore` file and then add the path of the files you do not want to be tracked by git.
+  - We can also track individual files with, `git add path_to_file`.
 - then stage (save) them, `git commit -m "some message"`
+
+  - if you have a whole lot of message, do, `git commit`.
+  - Your default editor (mostly vim) will open. Enter the message, making sure that the topic sentence is the first line and the next line is a newline. Your message starts on the third.
+  - save and close the file to add a commit message and make a successful commit
+
 - now copy the remote repository URL and do, `git remote add origin https://...`, where `https://../` is the remote URL
-- now send it to the remote repository, `$ git push origin https://...`
+- now send it to the remote repository, `$ git push origin https://...`. A username and a password (token) might be required.
 
 ## Git status
 
@@ -110,7 +118,7 @@ do `git log` to see the commits we have made. Thus provides us with some informa
 
 ## Reset
 
-`git reset [commit]` where `commit` is the code we see when we make a commit. Use that code to reset the repository. It undoes all the commits but keeps the changes, `git reset --hard [commit]` does the same but discard all histories up to the particular commit.
+`git reset [commit]` where `commit` is the code we see when we made the commit. Use that code to reset the repository. It undoes all the commits but keeps the changes, `git reset --hard [commit]` does the same but discard all histories up to the particular commit.
 
 ## Branch
 
