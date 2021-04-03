@@ -1,10 +1,13 @@
 # Format used in preparing this content
-We used a very simple structure that basically leads us to the brevity of these materials. In order, 
 
-* Content
-* Examples and Notes (Warnings)
-* Practicals (Exercise)
-* Summary
+We used a very simple structure that basically leads us to the brevity of these materials. In order,
+
+- Content
+- Examples and Notes (Warnings)
+- Practicals (Exercise)
+- Summary
+
+The order can be ignored if it becomes a restriction.
 
 ## Content
 
@@ -25,4 +28,3 @@ This is basically bulleting what we thought or think is really needed to carry w
 ## Format for header text
 
 Let all header text be Capitalized - that is , uppercase first character
-

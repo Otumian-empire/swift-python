@@ -6,3 +6,6 @@ practical
 swift-python.odt
 swift-python.pdf
 .~lock.swift-python.odt#
+*.py
+.pytest_cache
+swift-python-md2pdf.pdf
