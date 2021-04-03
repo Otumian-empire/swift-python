@@ -14,6 +14,9 @@ Open the command-line - power shell for windows, after a successful installation
 
 - Set user name: `git config --global user.name your_user_name`
 - Set user email: `git config --global user.email your_user_email`
+- Set credential: `git config --global credential.helper store`
+
+[Read about PAT and SSH][pat-ssh]
 
 This actually can be changed for every software we want to create using git, else this configuration is the default.
 
@@ -168,3 +171,4 @@ A branch is similar to versioning. We can diverge from the `main` code, work on 
 [brad-git-site]: https://www.youtube.com/watch?v=SWYqp7iY_Tc
 [w3school-github-site]: https://www.w3schools.com/whatis/whatis_github.asp
 [git-scm-site]: https://git-scm.com/docs/gittutorial
+[pat-ssh]: https://dev.to/otumianempire/create-a-github-personal-access-token-and-ssh-for-your-github-repository-3741
