@@ -1,53 +1,80 @@
 # Exercise 26 (Starting a project)
 
-Starting a new project from ground up kind be scary. Can you believe that having to read through and attempt almost all the exercises and pondered and struggled with certain concepts and making sense of them up to now, starting a project will be scary? No. Not at all.
+A project idea can make you procrastinate, do you believe that? Do you also know that it is better to have a broad view of the project you want to build before you start coding? Do you know that it is not, sometimes, the code that makes the project but the idea? Of course, what is an idea if is just a paper project? Do you know that your project does not have to necessarily rock the world? Your project can be function implementations of some mathematical concepts. Your projects can just be the solutions (implementations) of some algorithm and data structure course. The point we are trying to pass across is, do you understand the programming concepts we have discussed so far and can you use them?
+
+A project may fit into one file. It depends. You should know when separate concerns (functionalities). You can separate some functions in a new file. If some of these functions and data required can fit into a class, do that.
+
+Get the project idea and write a story on it. This story will guide you on how you should implement the idea.
 
 ## Virtual environment
+
+Whenever we want to start a project, it is recommended that we use a virtual environment. A virtual environment separates the requirements we need from our current project from the modules and packages that are on our local system. With this approach, we can choose a version of a module that is unique to our project. This will not affect the version of the local module if it exists. We recommend you use pipenv.
 
 <!-- pipenv, pyenv, pip -->
 
 ## Project management
 
+[Github][github] is one of the free servers that can host our project. You will have to create a Github repo for your project. This will allow others to contribute to your project. Again, if the unfortunate happens when you lose your PC, you still have the remote code available on Github.
+
+[Trello][trello] can be used as a management tool for your project. It is a very great tool for managing projects for a small number of devs also.
+
 <!-- github and trello -->
 
 ## Unit test
+
+There are instances whereby we have to take another step to develop an interface for some functionalities. There is no need for these extra step when is not needed. Write a unit test instead.
 
 <!-- Add unit test to your code -->
 
 ## Documentation
 
+Every project must have a story. This story tells onlookers and stakeholders what your project does and sometimes the benefit it comes with. It tells users and other devs how to use your application and sometimes how to extend it.
+
 <!-- The project story and technical details -->
 
-## where to go from here
+## Where to go from here
 
-Starting a python project
-to start a python project, we need a seculed environment to work in
-pipenv
-pyenv
-pip
-pytest
-github https://github.com
-trello https://trello.com
-example of project written by author
-some other example devekoper may try out
+From here, try going through the resources below. (It is not compulsory). It is good for your programming health. The more you understand the better.
 
-<!-- advance skill with dataquest, and datacamp abd codecademy and freecodecamp-->
-<!-- exercism, hackerrank, algorithms and data structures and design patterns -->
+### How to structure a project
+
+- [The Hitchhiker's guide to python - Structuring Your Project][project-structure-py-doc]
+- [Julien Danjou - Starting your first Python project][project-structure-julien]
+
+### More on virtual environments
+
+- [The Hitchhiker's guide to python - Pipenv & Virtual Environments][py-guide-virtualenvs]
+- [Pipenv - Python Dev Workflow for Humans][pipenv]
+- [Real Python - Pipenv: A Guide to the New Python Packaging Tool][real-python-pipenv]
+
+### More Projects for your elbow
+
+- [42 Exciting Python Project Ideas & Topics for Beginners by Rohit Sharma ][upgrad-project-ideas]
+- [Python projects for beginners][beginnerpythonprojects]
+- [10 Easy Python Programming Project Ideas by Mikke][python-projects-for-beginners]
+- [DATAQUEST - 45 Fun (and Unique) Python Project Ideas for Easy Learning][dataquest-project-for-beginners]
+
+#
+
+<!-- Starting a python project -->
+
+[github]: https://github.com
+[trello]: https://trello.com
+
 <!-- project structure -->
 
-structure of the project
-https://docs.python-guide.org/writing/structure/
-https://julien.danjou.info/starting-your-first-python-project/
+[project-structure-py-doc]: https://docs.python-guide.org/writing/structure/
+[project-structure-julien]: https://julien.danjou.info/starting-your-first-python-project/
 
 <!-- projects -->
 
-https://www.upgrad.com/blog/python-projects-ideas-topics-beginners/
-https://beginnerpythonprojects.com/
-https://mikkegoes.com/python-projects-for-beginners/
-https://www.dataquest.io/blog/python-projects-for-beginners/
+[upgrad-project-ideas]: https://www.upgrad.com/blog/python-projects-ideas-topics-beginners/
+[beginnerpythonprojects]: https://beginnerpythonprojects.com/
+[python-projects-for-beginners]: https://mikkegoes.com/python-projects-for-beginners/
+[dataquest-project-for-beginners]: https://www.dataquest.io/blog/python-projects-for-beginners/
 
 <!-- virtual environment -->
 
-https://docs.python-guide.org/dev/virtualenvs/
-https://pipenv.pypa.io/en/latest/
-https://realpython.com/pipenv-guide/
+[py-guide-virtualenvs]: https://docs.python-guide.org/dev/virtualenvs/
+[pipenv]: https://pipenv.pypa.io/en/latest/
+[real-python-pipenv]: https://realpython.com/pipenv-guide/
