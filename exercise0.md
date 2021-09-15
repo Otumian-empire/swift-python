@@ -64,7 +64,7 @@ At this option, the user has a terminal (command-line, shell ) and a text editor
 
 ## Note
 
-It is a little bit hard to navigate through the directories as a beginner. If the user insists on using the command-line and text editor, we recommend the watch this [video][windwos-cmd-site] for windows user and this [video][unix-linux-cmd-site] for Linux users. There is more also [here][advanced-cmd]. You can also reference our [commandline][cli-presentation] presentation, using Powershell as administrator on windows.
+It is a little bit hard to navigate through the directories as a beginner. If the user insists on using the command-line and text editor, we recommend watching this [video][windwos-cmd-site], for windows user and this [video][unix-linux-cmd-site] for Linux users. There is more also [here][advanced-cmd]. You can also reference our [commandline][cli-presentation] presentation, using Powershell as administrator on windows.
 
 ### Structure of the book
 

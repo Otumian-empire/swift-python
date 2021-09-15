@@ -18,7 +18,7 @@
    1. exercise 11 a (For Loop)
    1. exercise 11 b (While Loops)
 1. exercise 12 (Functions)
-   1. exercise 12 a (A function and its  definition)
+   1. exercise 12 a (A function and its definition)
    1. exercise 12 b (A function that returns a value)
    1. exercise 12 c (Recursion and lambda functions)
 1. exercise 13 (Some builtin functions)
@@ -38,3 +38,4 @@
 1. exercise 24 (SQL)
 1. exercise 25 (Python SQLite3)
 1. exercise 26 (Starting a project)
+1. exercise 27 (Project)
