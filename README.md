@@ -1,5 +1,10 @@
 # Swift-Python
 
+![swift-python-cover-image](https://github.com/Otumian-empire/swift-python/blob/main/swift-python-cover.png)
+
+
+Cover Image from [canva-templates]
+
 This is a swift presentation on the basics of programming, using the python programming language to the extent that we can take it.
 
 This material is meant for anyone interested in learning python given a limited period or an experienced developer who want to pick up the python programming. Also, students who have taken an introduction to computer science or programming would find this helpful in their frame.
@@ -60,3 +65,4 @@ Not necessary though. One should break the project into basically four phases, i
 
 [markdowntopdf]: https://www.markdowntopdf.com/
 [swift-python]: https://github.com/otumian-empire/swift-python
+[canva-templates]: https://www.canva.com/templates/EAEFkq0Vm6Q-orange-halloween-birthday-facebook-event-cover/
