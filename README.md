@@ -13,7 +13,7 @@ The content and examples are simple, quick and summarized with examples to try o
 
 The content here is very simple to follow, all you need is the latest or stable version of python available on your PC and your favourite text editor or simply install an IDE.
 
-Read the content, take notes and try the exercises/practicals/practice projects for your good.
+Read the content, take notes and try the exercises/practicals/practice projects for your own good. If you want to read a recent update, chck out the series on [DEV].
 
 ## What you will learn
 
@@ -66,3 +66,4 @@ Not necessary though. One should break the project into basically four phases, i
 [markdowntopdf]: https://www.markdowntopdf.com/
 [swift-python]: https://github.com/otumian-empire/swift-python
 [canva-templates]: https://www.canva.com/templates/EAEFkq0Vm6Q-orange-halloween-birthday-facebook-event-cover/
+[DEV]: https://dev.to/otumianempire/series/9932
